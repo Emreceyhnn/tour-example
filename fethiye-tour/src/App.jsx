@@ -6,12 +6,14 @@ import TermsOfService from './pages/TermsOfService';
 import BayGuidePage from './pages/BayGuidePage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import AboutUsPage from './pages/AboutUsPage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/:lang">
             <Route index element={<LandingPage />} />
