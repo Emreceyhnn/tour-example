@@ -23,7 +23,7 @@ export default function AboutUsPage() {
           component="section"
           sx={{
             position: "relative",
-            height: "90vh",
+            height: { xs: "100dvh", md: "90vh" },
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -140,6 +140,8 @@ export default function AboutUsPage() {
                     component="img"
                     src="/ship.webp"
                     alt="Turkish Gulet Craftsmanship"
+                    loading="lazy"
+                    decoding="async"
                     sx={{
                       borderRadius: "8px",
                       width: "100%",
@@ -472,6 +474,8 @@ export default function AboutUsPage() {
                       component="img"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Zv7LTeG3O5bFBZPn-UQb8YBJoJcf-OSP-0-nXHJi3ILOnz6cNYqj0ZRIHBzGrfUSDXvY5jrss9oxM9ms4eRFBx0kAP-dOb9Wa-1phN-H1lslf9I1VXaL8bV4YSMPmVALQYAo6JOuZrKUUHG7raa1T7bmZfjfu-0xpN7EbjtgI7quZG2KNh7W2PubPEtm79_GPLNlsPLe1ApGS5hGIDll4kl_2P0o2lltuZSxR-eT-vgOazGnPTA0CmEn8TuIFc7hPA8mRQBIvtQ"
                       alt="Captain Mehmet"
+                      loading="lazy"
+                      decoding="async"
                       sx={{
                         width: "100%",
                         height: "288px",
@@ -519,6 +523,8 @@ export default function AboutUsPage() {
                       component="img"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1m2mPkmXjt8qScjGs2ZnLpc_Fvjz5smM7bFrJzM2sFxmhQ3NYxyh5HWM7ggWbVRQ5EmOYxPlL3yKgqxU8yUkC1ktLosehjT_Aji0PBo4FkqTdoW3hLh_DZ74EA-Y-557eG15emn1OAwjmA1F1HjRosWANPK4XUdEyd8tCIrM7kfnjUYtGRPcIL6YC8_oKe8r-uvu6VzVSRqrQzdSXnXpUuAuncX7dvhEiBN0iw6gUxNA8X9LbC-d1X5wjeDi-KPdUItmPzbiMmug"
                       alt="Chef Ayşe"
+                      loading="lazy"
+                      decoding="async"
                       sx={{
                         width: "100%",
                         height: "288px",
@@ -634,6 +640,8 @@ export default function AboutUsPage() {
                       component="img"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuCia0rlLsuw6OF_TeAgbOBuefvSBjHqBSWQ4VmNaOpysWkTF1nKmC97zoIFWVT6-TJdDB2vMmZKWhcIAQ6LGtzAL8pPBHdcQPQ2mTxvFMx7kVxpuqp9j09GpnoEhrqMTc81oFNraCco8pYmV2haoyVsKAtAHc7Hm0__7UFEv93RbxsrcJMG-WFfun6tbOyoegm6ACqOrdpZgLNWw3_iTq7nKoRYyiK3iEsjs9Eqa85ohNP-DrzSoLAovsHZ8Qym8_h4Iera8gIH7TI"
                       alt="Ege Yıldızı Gulet"
+                      loading="lazy"
+                      decoding="async"
                       sx={{
                         width: "100%",
                         height: "100%",
@@ -730,6 +738,8 @@ export default function AboutUsPage() {
                       component="img"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMkQtCG8k13WWEmLMIfYIul4slxwXy2nmS6eC6P8NZWxClfsjE-CVBI_Dxl9t5AMULN9F0cP3g_g3wPq3ctd0I4s6COeGHa_9ColNGtalz-LI_arRUXev3Xt_m1lxBYte1lNN1_bSxBfst7Z-alhLID6UOGXZkYjHc7bYZq7nvVs1Wmljgn773GS86eG859xH-Mm42Gs2w_O_JkD0WuYYWv-OxT-h9rk0bEp53X9cOqb9KCo4pMkz4ldE3Dqk8GLRrC2Fuk5OUS6M"
                       alt="Mavi Düş Gulet"
+                      loading="lazy"
+                      decoding="async"
                       sx={{
                         width: "100%",
                         height: "100%",

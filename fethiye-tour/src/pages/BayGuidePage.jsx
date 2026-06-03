@@ -276,7 +276,7 @@ export default function BayGuidePage() {
                   }}
                 >
                   {/* Image side */}
-                  <Stack xs={12} md={6}>
+                  <Box sx={{ width: { xs: "100%", md: "50%" } }}>
                     <ScrollReveal delay={index * 100}>
                       <Box
                         sx={{
@@ -295,9 +295,11 @@ export default function BayGuidePage() {
                           component="img"
                           src={bay.image}
                           alt={t(`bayguide.bays.${bay.key}.title`)}
+                          loading="lazy"
+                          decoding="async"
                           sx={{
-                            width: { xs: 300, md: 450 },
-                            height: { xs: 300, md: 450 },
+                            width: "100%",
+                            height: "100%",
                             objectFit: "cover",
                             transition:
                               "transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1)",
@@ -305,9 +307,9 @@ export default function BayGuidePage() {
                         />
                       </Box>
                     </ScrollReveal>
-                  </Stack>
+                  </Box>
                   {/* Text side */}
-                  <Stack xs={12} md={6}>
+                  <Box sx={{ width: { xs: "100%", md: "50%" } }}>
                     <ScrollReveal delay={index * 100 + 200}>
                       <Box
                         sx={{
@@ -445,7 +447,7 @@ export default function BayGuidePage() {
                         )}
                       </Box>
                     </ScrollReveal>
-                  </Stack>
+                  </Box>
                 </Stack>
               </Stack>
             ))}

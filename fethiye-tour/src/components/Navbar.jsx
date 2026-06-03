@@ -240,11 +240,43 @@ export default function Navbar() {
                     color: "#3e484c",
                   }}
                 />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+          <Box sx={{ display: "flex", justifyContent: "center", gap: 3, mt: 4, mb: 2 }}>
+            <Typography
+              onClick={() => { switchLanguage("tr"); handleDrawerToggle(); }}
+              sx={{
+                color: "#0B4A5C",
+                fontSize: "20px",
+                fontWeight: 600,
+                cursor: "pointer",
+                opacity: lang === "tr" ? 1 : 0.5,
+                transition: "all 0.3s",
+                "&:hover": { opacity: 1, transform: "scale(1.1)" },
+                filter: lang === "tr" ? "none" : "grayscale(100%)",
+              }}
+            >
+              Türkçe
+            </Typography>
+            <Typography
+              onClick={() => { switchLanguage("en"); handleDrawerToggle(); }}
+              sx={{
+                color: "#0B4A5C",
+                fontSize: "20px",
+                fontWeight: 600,
+                cursor: "pointer",
+                opacity: lang === "en" ? 1 : 0.5,
+                transition: "all 0.3s",
+                "&:hover": { opacity: 1, transform: "scale(1.1)" },
+                filter: lang === "en" ? "none" : "grayscale(100%)",
+              }}
+            >
+              English
+            </Typography>
+          </Box>
+        </Drawer>
     </>
   );
 }

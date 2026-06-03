@@ -82,6 +82,8 @@ function RouteCard({ route, index }) {
             className="route-image"
             src={route.image}
             alt={t(`routes.${route.key}.title`)}
+            loading="lazy"
+            decoding="async"
             sx={{
               width: "100%",
               height: "100%",
@@ -199,7 +201,7 @@ export default function RoutesSection() {
             <Stack
               key={route.key}
               sx={{
-                flexBasis: "calc(33.33% - 20px)",
+                flexBasis: { xs: "100%", md: "calc(50% - 12px)", lg: "calc(33.33% - 16px)" },
                 flexGrow: 1,
               }}
             >

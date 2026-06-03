@@ -132,6 +132,8 @@ export default function GallerySection() {
                   component="img"
                   src={img.src}
                   alt={img.alt}
+                  loading="lazy"
+                  decoding="async"
                   sx={{
                     width: "100%",
                     display: "block",

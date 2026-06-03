@@ -11,7 +11,7 @@ export default function HeroSection() {
       id="hero"
       sx={{
         position: "relative",
-        height: "100vh",
+        height: { xs: "100dvh", md: "100vh" },
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -49,8 +49,8 @@ export default function HeroSection() {
           sx={{
             fontFamily: '"Playfair Display", serif',
             fontWeight: 700,
-            fontSize: { xs: "42px", md: "64px" },
-            lineHeight: { xs: "50px", md: "72px" },
+            fontSize: { xs: "32px", md: "64px" },
+            lineHeight: { xs: "40px", md: "72px" },
             letterSpacing: "-0.02em",
             color: "#fff",
             mb: 3,
