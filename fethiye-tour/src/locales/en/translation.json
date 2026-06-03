@@ -1,0 +1,239 @@
+{
+  "nav": {
+    "home": "Home",
+    "routes": "Routes",
+    "gallery": "Gallery",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  },
+  "hero": {
+    "title": "Explore Fethiye",
+    "subtitle": "Hidden Bays, Endless Blue"
+  },
+  "footer": {
+    "desc": "Experience the untouched beauty of the Mediterranean coast on our private luxury gulets.",
+    "links": "Quick Links",
+    "contact": "Contact Us",
+    "rights": "All rights reserved."
+  },
+  "routes": {
+    "title": "Our Routes",
+    "subtitle": "Discover the untouched beauty of the Mediterranean coast.",
+    "oludeniz": { "title": "Ölüdeniz", "desc": "The world-famous Blue Lagoon with its calm, crystal-clear waters." },
+    "butterfly": { "title": "Butterfly Valley", "desc": "A nature reserve accessible only by boat, enclosed by steep cliffs." },
+    "stnicholas": { "title": "St. Nicholas Island", "desc": "Explore ancient ruins and watch a breathtaking sunset." },
+    "gemiler": { "title": "Gemiler Bay", "desc": "A tranquil cove surrounded by olive and pine trees." },
+    "saklikent": { "title": "Saklıkent", "desc": "Impressive gorges and icy mountain streams." },
+    "gocek": { "title": "Göcek Archipelago", "desc": "A sailor's paradise with numerous islands and secluded bays." }
+  },
+  "included": {
+    "title": "What's Included",
+    "subtitle": "Everything you need for a perfect day at sea.",
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "snorkeling": "Snorkeling Gear",
+    "crew": "Professional Crew",
+    "sunset": "Sunset Views",
+    "wifi": "Free Wi-Fi Onboard"
+  },
+  "booking": {
+    "title": "Ready to Set Sail?",
+    "subtitle": "Contact us directly via WhatsApp for the fastest response and personalized booking."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Moments captured in paradise."
+  },
+  "testimonials": {
+    "t1": {
+      "text": "\"An unforgettable experience. The crew was amazing, the food was delicious, and the views were simply breathtaking. Highly recommend Mavi Rota for anyone visiting Fethiye.\"",
+      "author": "- Sarah Jenkins, UK"
+    },
+    "t2": {
+      "text": "\"A wonderful experience! The crew was very attentive, the food was delicious, and the views were breathtaking. I definitely recommend Mavi Rota to anyone coming to Fethiye.\"",
+      "author": "- Ayşe Yılmaz"
+    },
+    "t3": {
+      "text": "\"The sunset tour was the highlight of our trip. Watching the sun dip behind the islands while sipping wine on a gulet — pure magic.\"",
+      "author": "- Marco Rossi, IT"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Our Story",
+      "subtitle": "Crafting timeless memories on the Turquoise Coast since 1998. Experience the soul of the Mediterranean on Fethiye's most exclusive handcrafted gulets."
+    },
+    "heritage": {
+      "title": "The Heritage",
+      "p1": "Our journey began in the small shipyards of Fethiye, where the scent of cedar wood and the rhythmic sound of hammers defined the passage of time. Turkish gulets are more than just vessels; they are hand-carved testaments to centuries of naval craftsmanship.",
+      "p2": "At Mavi Rota, we preserve this living history. Each of our ships is built using traditional methods, utilizing locally sourced timbers that breathe with the sea. We don't just sail; we carry the spirit of the Aegean voyagers into the modern era of luxury travel.",
+      "stat1_value": "25+",
+      "stat1_label": "Years of Service",
+      "stat2_value": "100%",
+      "stat2_label": "Local Crew"
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "subtitle": "Guided by the rhythms of the sea.",
+      "cards": {
+        "slow": { "title": "Slow Travel", "desc": "Leave the rush behind. We believe in unhurried mornings, long lunches at anchor, and the luxury of time in the world's most beautiful bays." },
+        "flavors": { "title": "Authentic Flavors", "desc": "Our chefs source daily from local markets and fishermen, preparing Aegean feasts that celebrate the heritage of Turkish hospitality." },
+        "hidden": { "title": "Hidden Sanctuaries", "desc": "Avoid the crowds. We take you to the secret coves of Fethiye and Göcek accessible only by sea, where the turquoise is purest." }
+      }
+    },
+    "crew": {
+      "title": "The Heart of the Voyage",
+      "p1": "A voyage is only as memorable as the people who guide it. Our crew members are lifelong residents of the Fethiye coast, possessing intimate knowledge of every bay and current.",
+      "p2": "From Captain Mehmet's expert navigation to Chef Ayşe's celebrated traditional recipes, our team provides a personalized service that feels like being welcomed into a family home on the water.",
+      "c1": { "name": "Capt. Mehmet", "role": "30 Years at Sea" },
+      "c2": { "name": "Chef Ayşe", "role": "Master of Aegean Cuisine" }
+    },
+    "fleet": {
+      "title": "Our Fleet",
+      "subtitle": "Discover our collection of hand-picked luxury gulets.",
+      "button": "View Technical Specs",
+      "f1": { "badge": "Flagship", "name": "Ege Yıldızı", "desc": "The Star of the Aegean", "spec1": "32 Meters", "spec2": "6 En-suite Cabins" },
+      "f2": { "badge": "Intimate", "name": "Mavi Düş", "desc": "The Blue Dream", "spec1": "24 Meters", "spec2": "4 En-suite Cabins" }
+    },
+    "sustainability": {
+      "tag": "Sustainability",
+      "title": "Protecting Our Blue Home",
+      "desc": "Our love for the sea comes with a responsibility to protect it. At Mavi Rota, we are committed to preserving the fragile ecosystems of the Fethiye gulf for future generations.",
+      "points": [
+        "Zero single-use plastics on all voyages",
+        "Strict 'No Anchor' policy in sensitive reef areas",
+        "Support for local sea turtle conservation"
+      ]
+    }
+  },
+  "bayguide": {
+    "hero": {
+      "overline": "Explore Fethiye",
+      "title": "The Bays Guide",
+      "subtitle": "Discover the hidden sanctuaries of the Turquoise Coast. From butterfly-filled canyons to the sunken ruins of Cleopatra's Baths."
+    },
+    "intro": {
+      "title": "Navigating Serenity",
+      "desc": "Fethiye's coastline is a masterpiece of nature, where the Taurus mountains plunge into the Mediterranean. Our guide isn't just about locations; it's about the feeling of the salt on your skin and the rhythmic sound of water against wood as you drop anchor in a silent cove."
+    },
+    "bays": {
+      "oludeniz": {
+        "label": "The Iconic Lagoon",
+        "title": "Ölüdeniz",
+        "description": "The \"Dead Sea\" of Turkey—so named for its incredibly calm waters even during storms. Beyond the public beach lies the protected lagoon, a sanctuary of stillness where the water transitions from pale mint to deep cobalt.",
+        "tips_label": "Tips",
+        "tip1_label": "Best Time",
+        "tip1_text": "Sunrise for mirror-like water.",
+        "tip2_label": "Activity",
+        "tip2_text": "Paddleboarding the lagoon edges."
+      },
+      "butterfly": {
+        "label": "Nature's Fortress",
+        "title": "Butterfly Valley",
+        "description": "Accessible only by boat or a treacherous hike, Kelebekler Vadisi is a world unto itself. Home to the Jersey Tiger butterfly, this deep canyon offers a waterfall hidden at its rear and a beach that feels like the edge of the world.",
+        "quote": "\"The silence here is punctuated only by the sound of the waterfall and the distant hum of the Mediterranean.\""
+      },
+      "gemile": {
+        "label": "Sunken History",
+        "title": "Gemile Island",
+        "description": "Also known as St. Nicholas Island, Gemile features ruins of Byzantine churches that literally spill into the sea. Snorkel through history as you discover ancient docks submerged just inches below the surface.",
+        "check1": "Perfect for sunset hiking to the summit",
+        "check2": "Incredible snorkeling around the ruins"
+      }
+    },
+    "tips": {
+      "t1": { "title": "When to Go", "text": "May to June and September to October offer the perfect balance of warm water and refreshing breezes, avoiding the peak heat of August." },
+      "t2": { "title": "What to Pack", "text": "Polarized sunglasses, biodegradable sunscreen to protect the reefs, and a linen shirt for evening breezes on the deck." },
+      "t3": { "title": "Private Charters", "text": "Booking a private gulet allows you to access these bays before the crowds arrive and stay long after the day boats leave." }
+    }
+  },
+  "privacy": {
+    "badge": "LEGAL & COMPLIANCE",
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy is our compass. Learn how Mavi Rota handles your personal data with the same care and precision we use to navigate the Mediterranean.",
+    "nav": {
+      "data-collection": "Data Collection",
+      "use-info": "Use of Information",
+      "cookies": "Cookies & Tracking",
+      "third-party": "Third-Party Services"
+    },
+    "s1": {
+      "title": "Data Collection",
+      "p1": "At Mavi Rota, we collect information that helps us personalize your voyage. This includes personal identifiers such as your name, contact details, and passport information required for port authorities.",
+      "p2": "We also collect technical data through your interactions with our digital concierge, including your IP address and device information, to ensure our platform performs flawlessly under the Aegean sun.",
+      "check1": "Booking Information: Names, dates of birth, and travel preferences.",
+      "check2": "Payment Details: Securely processed through encrypted gateways."
+    },
+    "s2": {
+      "title": "Use of Information",
+      "subtitle": "Your information serves one purpose: to orchestrate the perfect Mediterranean escape. We use your data to:",
+      "c1": { "title": "Service Fulfillment", "desc": "Processing reservations and coordinating with our crew to prepare your preferred itinerary." },
+      "c2": { "title": "Communication", "desc": "Sending essential travel documents, safety protocols, and curated Mediterranean guides." }
+    },
+    "s3": {
+      "title": "Cookies & Tracking",
+      "p1": "We use subtle digital markers to remember your language preferences and saved itineraries. These \"cookies\" help us understand which routes our guests enjoy most, allowing us to refine our offerings.",
+      "btn": "Manage Cookie Preferences"
+    },
+    "s4": {
+      "title": "Third-Party Services",
+      "p1": "Mavi Rota partners with elite maritime service providers, payment processors, and local excursion experts. We only share the minimum necessary information required to facilitate their specific services.",
+      "p2": "We never sell your personal data to advertisers. Your journey remains private, shared only with those who help make it a reality."
+    },
+    "cta": {
+      "title": "Questions about your data?",
+      "p1": "Our privacy officer is available to discuss our data handling practices or to assist with data access requests.",
+      "btn": "Contact Privacy Officer"
+    }
+  },
+  "terms": {
+    "badge": "Legal Framework",
+    "title": "Terms of Service",
+    "subtitle": "Guided by the currents of the Mediterranean, we ensure your voyage is secured with trust and professional integrity.",
+    "nav": {
+      "booking": "Booking Conditions",
+      "cancellation": "Cancellation Policy",
+      "safety": "Safety Regulations",
+      "liability": "Liability"
+    },
+    "booking": {
+      "title": "Booking Conditions",
+      "p1": "Reservations for Mavi Rota luxury gulets are finalized upon receipt of a 30% non-refundable deposit. The remaining balance is due exactly 45 days prior to the embarkation date.",
+      "points": [
+        "All rates are quoted in Euros and include VAT unless otherwise specified.",
+        "A valid passport and any necessary visas for entry into Turkey are the sole responsibility of the guest.",
+        "The rental period is strictly defined by the itinerary agreed upon during the booking phase.",
+        "Customization requests (itineraries, dietary needs) must be submitted 21 days before departure."
+      ]
+    },
+    "cancellation": {
+      "title": "Cancellation Policy",
+      "c1": { "title": "60+ Days Prior", "desc": "Deposit is forfeited, but no further cancellation fees apply. Rescheduling options may be available depending on season." },
+      "c2": { "title": "Under 30 Days", "desc": "100% of the total charter fee is non-refundable. We strongly recommend comprehensive travel insurance." }
+    },
+    "safety": {
+      "title": "Safety Regulations",
+      "quote": "\"The Captain's word is the law of the sea.\"",
+      "p1": "For the safety of all guests and crew, the following regulations are strictly enforced:",
+      "points": [
+        "Life jacket briefing is mandatory upon embarkation.",
+        "Smoking is strictly prohibited in cabins and interior lounges.",
+        "Alcohol consumption must be responsible; intoxication-related risks are the guest's own.",
+        "Night swimming is permitted only with the Captain's explicit consent."
+      ]
+    },
+    "liability": {
+      "title": "Liability",
+      "p1": "Mavi Rota and its operators are not liable for any injuries, losses, or damages incurred due to \"Force Majeure\" events, including but not limited to weather conditions, mechanical failure despite maintenance, or maritime restrictions.",
+      "quote": "\"Guests are responsible for any damage to the gulet or its equipment caused by negligence or willful misconduct. A security deposit may be required for specific high-value charters.\""
+    },
+    "cta": {
+      "title": "Have Questions?",
+      "p1": "Our concierge team is available to clarify any aspect of our terms and conditions to ensure your peace of mind.",
+      "btn1": "Contact Legal Team",
+      "btn2": "Download PDF"
+    }
+  }
+}

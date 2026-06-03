@@ -1,0 +1,239 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "routes": "Rotalar",
+    "gallery": "Galeri",
+    "pricing": "Fiyatlar",
+    "about": "Hakkımızda",
+    "terms": "Hizmet Şartları",
+    "privacy": "Gizlilik Politikası"
+  },
+  "hero": {
+    "title": "Koy koy Fethiye",
+    "subtitle": "Gizli Koylar, Sonsuz Mavi"
+  },
+  "footer": {
+    "desc": "Özel lüks guletlerimizle Akdeniz sahillerinin el değmemiş güzelliğini deneyimleyin.",
+    "links": "Hızlı Bağlantılar",
+    "contact": "İletişim",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "routes": {
+    "title": "Rotalarımız",
+    "subtitle": "Akdeniz sahillerinin el değmemiş güzelliğini keşfedin.",
+    "oludeniz": { "title": "Ölüdeniz", "desc": "Sakin ve kristal berraklığındaki sularıyla dünyaca ünlü Ölüdeniz." },
+    "butterfly": { "title": "Kelebekler Vadisi", "desc": "Sarp kayalıklarla çevrili, sadece tekneyle ulaşılabilen bir doğa harikası." },
+    "stnicholas": { "title": "Gemiler Adası", "desc": "Antik kalıntıları keşfedin ve nefes kesen bir gün batımı izleyin." },
+    "gemiler": { "title": "Darboğaz", "desc": "Zeytin ve çam ağaçlarıyla çevrili sakin bir koy." },
+    "saklikent": { "title": "Saklıkent", "desc": "Etkileyici kanyonlar ve buz gibi dağ nehirleri." },
+    "gocek": { "title": "Göcek Adaları", "desc": "Sayısız ada ve tenha koyuyla denizcilerin cenneti." }
+  },
+  "included": {
+    "title": "Neler Dahil",
+    "subtitle": "Denizde mükemmel bir gün için ihtiyacınız olan her şey.",
+    "breakfast": "Kahvaltı",
+    "lunch": "Öğle Yemeği",
+    "snorkeling": "Şnorkel Ekipmanı",
+    "crew": "Profesyonel Mürettebat",
+    "sunset": "Gün Batımı Manzarası",
+    "wifi": "Ücretsiz Wi-Fi"
+  },
+  "booking": {
+    "title": "Yelken Açmaya Hazır Mısınız?",
+    "subtitle": "En hızlı yanıt ve kişiselleştirilmiş rezervasyon için bizimle doğrudan WhatsApp üzerinden iletişime geçin."
+  },
+  "gallery": {
+    "title": "Galeri",
+    "subtitle": "Cennetten yakalanan anlar."
+  },
+  "testimonials": {
+    "t1": {
+      "text": "\"Unutulmaz bir deneyim. Mürettebat harikaydı, yemekler lezzetliydi ve manzaralar tek kelimeyle nefes kesiciydi. Fethiye'ye gelen herkese Mavi Rota'yı şiddetle tavsiye ederim.\"",
+      "author": "- Sarah Jenkins, UK"
+    },
+    "t2": {
+      "text": "\"Harika bir deneyimdi! Mürettebat çok ilgiliydi, yemekler lezzetliydi ve manzaralar nefes kesiciydi. Fethiye'ye gelen herkese Mavi Rota'yı kesinlikle tavsiye ederim.\"",
+      "author": "- Ayşe Yılmaz"
+    },
+    "t3": {
+      "text": "\"Gün batımı turu gezimizin en güzel anıydı. Gulette şarap yudumlarken güneşin adaların arkasında batışını izlemek... tam bir büyü.\"",
+      "author": "- Marco Rossi, IT"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Hikayemiz",
+      "subtitle": "1998'den beri Turkuaz Kıyılarda zamansız anılar yaratıyoruz. Fethiye'nin en seçkin el yapımı guletlerinde Akdeniz'in ruhunu deneyimleyin."
+    },
+    "heritage": {
+      "title": "Mirasımız",
+      "p1": "Yolculuğumuz, sedir ağacı kokusu ve çekiç seslerinin zamanın geçişini belirlediği Fethiye'nin küçük tersanelerinde başladı. Türk guletleri sadece birer tekne değil; yüzyıllara dayanan denizcilik zanaatının el oyması kanıtlarıdır.",
+      "p2": "Mavi Rota olarak bu yaşayan tarihi koruyoruz. Gemilerimizin her biri, denizle nefes alan yerel keresteler kullanılarak geleneksel yöntemlerle inşa edilmektedir. Sadece yelken açmıyor; Ege denizcilerinin ruhunu lüks seyahatin modern çağına taşıyoruz.",
+      "stat1_value": "25+",
+      "stat1_label": "Hizmet Yılı",
+      "stat2_value": "100%",
+      "stat2_label": "Yerel Mürettebat"
+    },
+    "philosophy": {
+      "title": "Felsefemiz",
+      "subtitle": "Denizin ritminin rehberliğinde.",
+      "cards": {
+        "slow": { "title": "Yavaş Seyahat", "desc": "Aceleyi geride bırakın. Aceleye getirilmemiş sabahlara, demir atılmış uzun öğle yemeklerine ve dünyanın en güzel koylarında zamanın lüksüne inanıyoruz." },
+        "flavors": { "title": "Otantik Lezzetler", "desc": "Şeflerimiz her gün yerel pazarlardan ve balıkçılardan taze ürünler alarak Türk misafirperverliğinin mirasını kutlayan Ege ziyafetleri hazırlıyor." },
+        "hidden": { "title": "Gizli Sığınaklar", "desc": "Kalabalıktan kaçının. Sizi turkuazın en saf olduğu, sadece denizden ulaşılabilen gizli Fethiye ve Göcek koylarına götürüyoruz." }
+      }
+    },
+    "crew": {
+      "title": "Yolculuğun Kalbi",
+      "p1": "Bir yolculuk ancak ona rehberlik eden insanlar kadar unutulmazdır. Mürettebat üyelerimiz, her koy ve akıntı hakkında derin bilgiye sahip, hayatları boyunca Fethiye kıyılarında yaşamış kişilerdir.",
+      "p2": "Kaptan Mehmet'in uzman navigasyonundan Şef Ayşe'nin ünlü geleneksel tariflerine kadar ekibimiz, su üzerinde bir aile evinde ağırlanıyormuş hissi veren kişiselleştirilmiş bir hizmet sunar.",
+      "c1": { "name": "Kaptan Mehmet", "role": "Denizde 30 Yıl" },
+      "c2": { "name": "Şef Ayşe", "role": "Ege Mutfağı Ustası" }
+    },
+    "fleet": {
+      "title": "Filomuz",
+      "subtitle": "Özenle seçilmiş lüks gulet koleksiyonumuzu keşfedin.",
+      "button": "Teknik Özellikleri İncele",
+      "f1": { "badge": "Amiral Gemisi", "name": "Ege Yıldızı", "desc": "Ege'nin Yıldızı", "spec1": "32 Metre", "spec2": "6 En-suite Kabin" },
+      "f2": { "badge": "Samimi", "name": "Mavi Düş", "desc": "Mavi Rüya", "spec1": "24 Metre", "spec2": "4 En-suite Kabin" }
+    },
+    "sustainability": {
+      "tag": "Sürdürülebilirlik",
+      "title": "Mavi Evimizi Korumak",
+      "desc": "Deniz sevgimiz, onu koruma sorumluluğuyla birlikte gelir. Mavi Rota olarak, Fethiye körfezinin kırılgan ekosistemlerini gelecek nesiller için korumaya kararlıyız.",
+      "points": [
+        "Tüm seferlerde sıfır tek kullanımlık plastik",
+        "Hassas resif alanlarında kesin 'Demir Atılmaz' politikası",
+        "Yerel deniz kaplumbağası koruma çalışmalarına destek"
+      ]
+    }
+  },
+  "bayguide": {
+    "hero": {
+      "overline": "Fethiye'yi Keşfedin",
+      "title": "Koy Rehberi",
+      "subtitle": "Turkuaz Kıyının gizli sığınaklarını keşfedin. Kelebek dolu kanyonlardan Kleopatra Hamamı'nın batık kalıntılarına kadar."
+    },
+    "intro": {
+      "title": "Huzurda Seyir",
+      "desc": "Fethiye kıyıları, Toros dağlarının Akdeniz'le buluştuğu doğanın bir şaheseridir. Rehberimiz sadece mekanlardan ibaret değil; sessiz bir koya demir attığınızda teninizdeki tuzun hissi ve suyun ahşaba vuran ritmik sesidir."
+    },
+    "bays": {
+      "oludeniz": {
+        "label": "İkonik Lagün",
+        "title": "Ölüdeniz",
+        "description": "Türkiye'nin \"Ölü Denizi\" — fırtınalarda bile inanılmaz sakin suları nedeniyle bu ismi almıştır. Halk plajının ötesinde, suyun soluk naneden derin kobalta dönüştüğü koruma altındaki lagün yer alır.",
+        "tips_label": "İpuçları",
+        "tip1_label": "En İyi Zaman",
+        "tip1_text": "Ayna gibi su için gün doğumu.",
+        "tip2_label": "Aktivite",
+        "tip2_text": "Lagünün kenarlarında paddleboard."
+      },
+      "butterfly": {
+        "label": "Doğanın Kalesi",
+        "title": "Kelebekler Vadisi",
+        "description": "Sadece tekneyle veya zorlu bir yürüyüşle ulaşılabilen Kelebekler Vadisi başlı başına bir dünyadır. Kaplan Kelebeği'ne ev sahipliği yapan bu derin kanyon, arkasında gizli bir şelale ve dünyanın ucundaymış gibi hissettiren bir plaj sunar.",
+        "quote": "\"Buradaki sessizlik sadece şelalenin sesi ve Akdeniz'in uzak uğultusuyla kesiliyor.\""
+      },
+      "gemile": {
+        "label": "Batık Tarih",
+        "title": "Gemiler Adası",
+        "description": "St. Nicholas Adası olarak da bilinen Gemiler Adası, kelimenin tam anlamıyla denize dökülen Bizans kiliselerinin kalıntılarına sahiptir. Yüzeyin sadece birkaç inç altındaki antik rıhtımları keşfederken tarih içinde şnorkelle yüzün.",
+        "check1": "Zirveye gün batımı yürüyüşü için mükemmel",
+        "check2": "Kalıntılar etrafında inanılmaz şnorkel deneyimi"
+      }
+    },
+    "tips": {
+      "t1": { "title": "Ne Zaman Gidilir", "text": "Mayıs-Haziran ve Eylül-Ekim, Ağustos'un bunaltıcı sıcağından kaçınarak sıcak su ve serinletici rüzgarların mükemmel dengesini sunar." },
+      "t2": { "title": "Ne Paketlenmeli", "text": "Polarize güneş gözlüğü, resifleri korumak için biyolojik olarak parçalanabilen güneş kremi ve güvertede akşam esintileri için keten bir gömlek." },
+      "t3": { "title": "Özel Turlar", "text": "Özel bir gulet rezervasyonu yapmak, kalabalıklar gelmeden bu koylara erişmenizi ve günlük tekneler ayrıldıktan çok sonra bile kalmanızı sağlar." }
+    }
+  },
+  "privacy": {
+    "badge": "YASAL & UYUM",
+    "title": "Gizlilik Politikası",
+    "subtitle": "Gizliliğiniz bizim pusulamızdır. Mavi Rota'nın kişisel verilerinizi, Akdeniz'de seyrederken kullandığımız aynı özen ve hassasiyetle nasıl işlediğini öğrenin.",
+    "nav": {
+      "data-collection": "Veri Toplama",
+      "use-info": "Bilgilerin Kullanımı",
+      "cookies": "Çerezler ve İzleme",
+      "third-party": "Üçüncü Taraf Hizmetleri"
+    },
+    "s1": {
+      "title": "Veri Toplama",
+      "p1": "Mavi Rota'da yolculuğunuzu kişiselleştirmemize yardımcı olacak bilgileri topluyoruz. Buna adınız, iletişim bilgileriniz ve liman yetkilileri için gerekli pasaport bilgileri gibi kişisel tanımlayıcılar dahildir.",
+      "p2": "Ayrıca, platformumuzun Ege güneşi altında kusursuz çalışmasını sağlamak için IP adresiniz ve cihaz bilgileriniz de dahil olmak üzere dijital konsiyerjimizle etkileşimleriniz aracılığıyla teknik veriler topluyoruz.",
+      "check1": "Rezervasyon Bilgileri: İsimler, doğum tarihleri ve seyahat tercihleri.",
+      "check2": "Ödeme Detayları: Şifrelenmiş ağ geçitleri üzerinden güvenli bir şekilde işlenir."
+    },
+    "s2": {
+      "title": "Bilgilerin Kullanımı",
+      "subtitle": "Bilgileriniz tek bir amaca hizmet eder: mükemmel bir Akdeniz kaçamağı düzenlemek. Verilerinizi şu amaçlarla kullanırız:",
+      "c1": { "title": "Hizmetin Yerine Getirilmesi", "desc": "Rezervasyonları işleme koymak ve tercih ettiğiniz rotayı hazırlamak için mürettebatımızla koordinasyon sağlamak." },
+      "c2": { "title": "İletişim", "desc": "Gerekli seyahat belgelerini, güvenlik protokollerini ve özenle hazırlanmış Akdeniz rehberlerini göndermek." }
+    },
+    "s3": {
+      "title": "Çerezler ve İzleme",
+      "p1": "Dil tercihlerinizi ve kayıtlı rotalarınızı hatırlamak için ince dijital işaretçiler kullanıyoruz. Bu \"çerezler\" konuklarımızın hangi rotalardan en çok keyif aldığını anlamamıza ve sunduğumuz hizmetleri geliştirmemize yardımcı olur.",
+      "btn": "Çerez Tercihlerini Yönet"
+    },
+    "s4": {
+      "title": "Üçüncü Taraf Hizmetleri",
+      "p1": "Mavi Rota; elit denizcilik hizmeti sağlayıcıları, ödeme işlemcileri ve yerel tur uzmanlarıyla ortaklık yapmaktadır. Hizmetlerini kolaylaştırmak için yalnızca gerekli olan minimum bilgiyi paylaşıyoruz.",
+      "p2": "Kişisel verilerinizi asla reklamverenlere satmıyoruz. Yolculuğunuz gizli kalır ve sadece onun gerçekleşmesine yardımcı olanlarla paylaşılır."
+    },
+    "cta": {
+      "title": "Verilerinizle ilgili sorularınız mı var?",
+      "p1": "Gizlilik yetkilimiz, veri işleme uygulamalarımızı görüşmek veya veri erişim taleplerinize yardımcı olmak için hazırdır.",
+      "btn": "Gizlilik Yetkilisiyle İletişime Geç"
+    }
+  },
+  "terms": {
+    "badge": "Yasal Çerçeve",
+    "title": "Hizmet Şartları",
+    "subtitle": "Akdeniz akıntılarının rehberliğinde, yolculuğunuzun güven ve profesyonel dürüstlükle güvence altına alınmasını sağlıyoruz.",
+    "nav": {
+      "booking": "Rezervasyon Koşulları",
+      "cancellation": "İptal Politikası",
+      "safety": "Güvenlik Kuralları",
+      "liability": "Sorumluluk"
+    },
+    "booking": {
+      "title": "Rezervasyon Koşulları",
+      "p1": "Mavi Rota lüks guletleri için rezervasyonlar, iade edilmeyen %30'luk depozitonun alınmasıyla kesinleşir. Kalan bakiye biniş tarihinden tam 45 gün önce ödenmelidir.",
+      "points": [
+        "Aksi belirtilmedikçe tüm fiyatlar Euro cinsinden olup KDV dahildir.",
+        "Geçerli bir pasaport ve Türkiye'ye giriş için gerekli vizeler tamamen misafirin sorumluluğundadır.",
+        "Kiralama süresi, rezervasyon aşamasında mutabık kalınan rotayla kesin olarak belirlenmiştir.",
+        "Kişiselleştirme talepleri (rotalar, beslenme ihtiyaçları) kalkıştan 21 gün önce bildirilmelidir."
+      ]
+    },
+    "cancellation": {
+      "title": "İptal Politikası",
+      "c1": { "title": "60+ Gün Önce", "desc": "Depozito iade edilmez, ancak başka bir iptal ücreti uygulanmaz. Sezona bağlı olarak yeniden planlama seçenekleri sunulabilir." },
+      "c2": { "title": "30 Günden Az", "desc": "Toplam kira bedelinin %100'ü iade edilemez. Kapsamlı seyahat sigortası yaptırmanızı önemle tavsiye ederiz." }
+    },
+    "safety": {
+      "title": "Güvenlik Kuralları",
+      "quote": "\"Kaptanın sözü denizin kanunudur.\"",
+      "p1": "Tüm misafirlerin ve mürettebatın güvenliği için aşağıdaki kurallar kesinlikle uygulanır:",
+      "points": [
+        "Binişte can yeleği brifingi zorunludur.",
+        "Kabinlerde ve kapalı salonlarda sigara içmek kesinlikle yasaktır.",
+        "Alkol tüketimi sorumlu bir şekilde olmalıdır; sarhoşluğa bağlı riskler misafirin kendisine aittir.",
+        "Gece yüzmesine sadece Kaptanın açık izniyle müsaade edilir."
+      ]
+    },
+    "liability": {
+      "title": "Sorumluluk",
+      "p1": "Mavi Rota ve işletmecileri; hava koşulları, bakıma rağmen mekanik arızalar veya denizcilik kısıtlamaları dahil ancak bunlarla sınırlı olmamak üzere \"Mücbir Sebep\" olaylarından kaynaklanan herhangi bir yaralanma, kayıp veya hasardan sorumlu değildir.",
+      "quote": "\"İhmal veya kasıtlı suiistimalden kaynaklanan gulete veya ekipmanına verilen herhangi bir hasardan misafirler sorumludur. Belirli yüksek değerli kiralamalar için güvenlik depozitosu gerekebilir.\""
+    },
+    "cta": {
+      "title": "Sorularınız mı var?",
+      "p1": "Konsiyerj ekibimiz, içinizin rahat etmesi adına şart ve koşullarımızın herhangi bir yönünü açıklığa kavuşturmak için hizmetinizdedir.",
+      "btn1": "Hukuk Ekibiyle İletişime Geç",
+      "btn2": "PDF İndir"
+    }
+  }
+}
