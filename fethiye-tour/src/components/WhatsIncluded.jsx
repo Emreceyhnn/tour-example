@@ -103,7 +103,9 @@ export default function WhatsIncluded() {
                 alignItems="center"
                 sx={{
                   flexBasis: { xs: "calc(50% - 8px)", sm: "calc(33.333% - 22px)", md: "auto" },
-                  minWidth: { md: "140px" },
+                  flexGrow: { md: 1 },
+                  maxWidth: { md: "200px" },
+                  width: { md: "100%" },
                 }}
               >
                 <Box
