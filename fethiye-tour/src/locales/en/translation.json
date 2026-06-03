@@ -21,12 +21,30 @@
   "routes": {
     "title": "Our Routes",
     "subtitle": "Discover the untouched beauty of the Mediterranean coast.",
-    "oludeniz": { "title": "Ölüdeniz", "desc": "The world-famous Blue Lagoon with its calm, crystal-clear waters." },
-    "butterfly": { "title": "Butterfly Valley", "desc": "A nature reserve accessible only by boat, enclosed by steep cliffs." },
-    "stnicholas": { "title": "St. Nicholas Island", "desc": "Explore ancient ruins and watch a breathtaking sunset." },
-    "gemiler": { "title": "Gemiler Bay", "desc": "A tranquil cove surrounded by olive and pine trees." },
-    "saklikent": { "title": "Saklıkent", "desc": "Impressive gorges and icy mountain streams." },
-    "gocek": { "title": "Göcek Archipelago", "desc": "A sailor's paradise with numerous islands and secluded bays." }
+    "oludeniz": {
+      "title": "Ölüdeniz",
+      "desc": "The world-famous Blue Lagoon with its calm, crystal-clear waters."
+    },
+    "butterfly": {
+      "title": "Butterfly Valley",
+      "desc": "A nature reserve accessible only by boat, enclosed by steep cliffs."
+    },
+    "stnicholas": {
+      "title": "St. Nicholas Island",
+      "desc": "Explore ancient ruins and watch a breathtaking sunset."
+    },
+    "gemiler": {
+      "title": "Gemiler Bay",
+      "desc": "A tranquil cove surrounded by olive and pine trees."
+    },
+    "saklikent": {
+      "title": "Saklıkent",
+      "desc": "Impressive gorges and icy mountain streams."
+    },
+    "gocek": {
+      "title": "Göcek Archipelago",
+      "desc": "A sailor's paradise with numerous islands and secluded bays."
+    }
   },
   "included": {
     "title": "What's Included",
@@ -40,7 +58,8 @@
   },
   "booking": {
     "title": "Ready to Set Sail?",
-    "subtitle": "Contact us directly via WhatsApp for the fastest response and personalized booking."
+    "subtitle": "Contact us directly via WhatsApp for the fastest response and personalized booking.",
+    "button": "Book now"
   },
   "gallery": {
     "title": "Gallery",
@@ -78,9 +97,18 @@
       "title": "Our Philosophy",
       "subtitle": "Guided by the rhythms of the sea.",
       "cards": {
-        "slow": { "title": "Slow Travel", "desc": "Leave the rush behind. We believe in unhurried mornings, long lunches at anchor, and the luxury of time in the world's most beautiful bays." },
-        "flavors": { "title": "Authentic Flavors", "desc": "Our chefs source daily from local markets and fishermen, preparing Aegean feasts that celebrate the heritage of Turkish hospitality." },
-        "hidden": { "title": "Hidden Sanctuaries", "desc": "Avoid the crowds. We take you to the secret coves of Fethiye and Göcek accessible only by sea, where the turquoise is purest." }
+        "slow": {
+          "title": "Slow Travel",
+          "desc": "Leave the rush behind. We believe in unhurried mornings, long lunches at anchor, and the luxury of time in the world's most beautiful bays."
+        },
+        "flavors": {
+          "title": "Authentic Flavors",
+          "desc": "Our chefs source daily from local markets and fishermen, preparing Aegean feasts that celebrate the heritage of Turkish hospitality."
+        },
+        "hidden": {
+          "title": "Hidden Sanctuaries",
+          "desc": "Avoid the crowds. We take you to the secret coves of Fethiye and Göcek accessible only by sea, where the turquoise is purest."
+        }
       }
     },
     "crew": {
@@ -94,8 +122,20 @@
       "title": "Our Fleet",
       "subtitle": "Discover our collection of hand-picked luxury gulets.",
       "button": "View Technical Specs",
-      "f1": { "badge": "Flagship", "name": "Ege Yıldızı", "desc": "The Star of the Aegean", "spec1": "32 Meters", "spec2": "6 En-suite Cabins" },
-      "f2": { "badge": "Intimate", "name": "Mavi Düş", "desc": "The Blue Dream", "spec1": "24 Meters", "spec2": "4 En-suite Cabins" }
+      "f1": {
+        "badge": "Flagship",
+        "name": "Ege Yıldızı",
+        "desc": "The Star of the Aegean",
+        "spec1": "32 Meters",
+        "spec2": "6 En-suite Cabins"
+      },
+      "f2": {
+        "badge": "Intimate",
+        "name": "Mavi Düş",
+        "desc": "The Blue Dream",
+        "spec1": "24 Meters",
+        "spec2": "4 En-suite Cabins"
+      }
     },
     "sustainability": {
       "tag": "Sustainability",
@@ -144,9 +184,18 @@
       }
     },
     "tips": {
-      "t1": { "title": "When to Go", "text": "May to June and September to October offer the perfect balance of warm water and refreshing breezes, avoiding the peak heat of August." },
-      "t2": { "title": "What to Pack", "text": "Polarized sunglasses, biodegradable sunscreen to protect the reefs, and a linen shirt for evening breezes on the deck." },
-      "t3": { "title": "Private Charters", "text": "Booking a private gulet allows you to access these bays before the crowds arrive and stay long after the day boats leave." }
+      "t1": {
+        "title": "When to Go",
+        "text": "May to June and September to October offer the perfect balance of warm water and refreshing breezes, avoiding the peak heat of August."
+      },
+      "t2": {
+        "title": "What to Pack",
+        "text": "Polarized sunglasses, biodegradable sunscreen to protect the reefs, and a linen shirt for evening breezes on the deck."
+      },
+      "t3": {
+        "title": "Private Charters",
+        "text": "Booking a private gulet allows you to access these bays before the crowds arrive and stay long after the day boats leave."
+      }
     }
   },
   "privacy": {
@@ -169,8 +218,14 @@
     "s2": {
       "title": "Use of Information",
       "subtitle": "Your information serves one purpose: to orchestrate the perfect Mediterranean escape. We use your data to:",
-      "c1": { "title": "Service Fulfillment", "desc": "Processing reservations and coordinating with our crew to prepare your preferred itinerary." },
-      "c2": { "title": "Communication", "desc": "Sending essential travel documents, safety protocols, and curated Mediterranean guides." }
+      "c1": {
+        "title": "Service Fulfillment",
+        "desc": "Processing reservations and coordinating with our crew to prepare your preferred itinerary."
+      },
+      "c2": {
+        "title": "Communication",
+        "desc": "Sending essential travel documents, safety protocols, and curated Mediterranean guides."
+      }
     },
     "s3": {
       "title": "Cookies & Tracking",
@@ -210,8 +265,14 @@
     },
     "cancellation": {
       "title": "Cancellation Policy",
-      "c1": { "title": "60+ Days Prior", "desc": "Deposit is forfeited, but no further cancellation fees apply. Rescheduling options may be available depending on season." },
-      "c2": { "title": "Under 30 Days", "desc": "100% of the total charter fee is non-refundable. We strongly recommend comprehensive travel insurance." }
+      "c1": {
+        "title": "60+ Days Prior",
+        "desc": "Deposit is forfeited, but no further cancellation fees apply. Rescheduling options may be available depending on season."
+      },
+      "c2": {
+        "title": "Under 30 Days",
+        "desc": "100% of the total charter fee is non-refundable. We strongly recommend comprehensive travel insurance."
+      }
     },
     "safety": {
       "title": "Safety Regulations",
@@ -234,6 +295,28 @@
       "p1": "Our concierge team is available to clarify any aspect of our terms and conditions to ensure your peace of mind.",
       "btn1": "Contact Legal Team",
       "btn2": "Download PDF"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Luxury Gulet Tours & Yacht Charter",
+      "desc": "Discover the hidden bays of Fethiye with our premium luxury gulet charters. Experience the endless blue of the Mediterranean."
+    },
+    "bayguide": {
+      "title": "Fethiye Bay Guide & Itineraries",
+      "desc": "Explore the pristine coves, ancient ruins, and hidden sanctuaries of the Turquoise Coast with our comprehensive bay guide."
+    },
+    "about": {
+      "title": "Our Story & Heritage",
+      "desc": "Crafting timeless memories on the Mediterranean since 1998. Meet our crew and discover our fleet of hand-picked luxury gulets."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "desc": "Learn how Mavi Rota handles your personal data with care and precision to ensure a secure Mediterranean voyage."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "desc": "Our booking conditions, cancellation policy, and safety regulations for an unforgettable gulet experience."
     }
   }
 }

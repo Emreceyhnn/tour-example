@@ -71,7 +71,7 @@ export default function GallerySection() {
         backgroundColor: "#fcf9f4",
       }}
     >
-      <Container maxWidth="xl" disableGutters sx={{ maxWidth: "1280px" }}>
+      <Container maxWidth="xl" disableGutters sx={{ maxWidth: "1440px" }}>
         <FadeInBox>
           <Box sx={{ textAlign: "center", mb: 8 }}>
             <Typography

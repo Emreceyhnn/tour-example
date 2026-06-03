@@ -127,7 +127,7 @@ export default function TestimonialsSection() {
                   borderRadius: '50%',
                   border: 'none',
                   cursor: 'pointer',
-                  backgroundColor: active === i ? '#006071' : '#e5e2dd',
+                  backgroundColor: active === i ? '#0B4A5C' : '#e5e2dd',
                   transition: 'background-color 0.3s ease, transform 0.3s ease',
                   '&:hover': {
                     transform: 'scale(1.2)',

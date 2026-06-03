@@ -43,7 +43,7 @@ export default function BookingCTA() {
         position: "relative",
         py: { xs: 10, md: 12 },
         px: { xs: 2, md: "80px" },
-        backgroundColor: "#006071",
+        backgroundColor: "#0B4A5C",
         color: "#fff",
         overflow: "hidden",
       }}
@@ -101,7 +101,7 @@ export default function BookingCTA() {
             startIcon={<ChatIcon sx={{ fontSize: 24 }} />}
             sx={{
               backgroundColor: "#fcf9f4",
-              color: "#006071",
+              color: "#0B4A5C",
               fontWeight: 700,
               fontSize: "18px",
               px: 4,

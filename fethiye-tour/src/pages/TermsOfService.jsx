@@ -13,6 +13,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
+import SEO from "../components/SEO";
 
 /* ─── Scroll-spy sidebar link ─── */
 function SidebarLink({ href, icon, label, active }) {
@@ -24,12 +25,12 @@ function SidebarLink({ href, icon, label, active }) {
         display: "flex",
         alignItems: "center",
         gap: 1,
-        color: active ? "#006071" : "#3e484c",
+        color: active ? "#0B4A5C" : "#3e484c",
         fontWeight: active ? 700 : 400,
         fontSize: "16px",
         textDecoration: "none",
         transition: "color 0.3s, transform 0.2s",
-        "&:hover": { color: "#006071", transform: "translateX(4px)" },
+        "&:hover": { color: "#0B4A5C", transform: "translateX(4px)" },
       }}
     >
       {icon}
@@ -102,6 +103,7 @@ export default function TermsOfService() {
 
   return (
     <>
+      <SEO titleKey="seo.terms.title" descKey="seo.terms.desc" canonical="/terms" />
       <Navbar />
 
       <Box component="main" sx={{ pt: "160px", pb: 10, minHeight: "100vh" }}>
@@ -115,7 +117,7 @@ export default function TermsOfService() {
               lineHeight: "16px",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
-              color: "#006071",
+              color: "#0B4A5C",
               mb: 2,
             }}
           >
@@ -161,7 +163,7 @@ export default function TermsOfService() {
           >
             <path
               d="M0 64L48 58.7C96 53 192 43 288 48C384 53 480 75 576 80C672 85 768 75 864 64C960 53 1056 43 1152 42.7C1248 43 1344 53 1392 58.7L1440 64V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0V64Z"
-              fill="#006071"
+              fill="#0B4A5C"
             />
           </svg>
         </Box>
@@ -193,7 +195,7 @@ export default function TermsOfService() {
                     fontFamily: '"Playfair Display", serif',
                     fontWeight: 600,
                     fontSize: "20px",
-                    color: "#006071",
+                    color: "#0B4A5C",
                     mb: 3,
                   }}
                 >
@@ -253,7 +255,7 @@ export default function TermsOfService() {
                         fontWeight: 600,
                         fontSize: "32px",
                         lineHeight: "40px",
-                        color: "#006071",
+                        color: "#0B4A5C",
                       }}
                     >
                       {t("terms.booking.title")}
@@ -338,7 +340,7 @@ export default function TermsOfService() {
                         fontWeight: 600,
                         fontSize: "32px",
                         lineHeight: "40px",
-                        color: "#006071",
+                        color: "#0B4A5C",
                       }}
                     >
                       {t("terms.cancellation.title")}
@@ -350,7 +352,7 @@ export default function TermsOfService() {
                         sx={{
                           p: 4,
                           borderRadius: "16px",
-                          borderLeft: "4px solid #006071",
+                          borderLeft: "4px solid #0B4A5C",
                           height: "100%",
                         }}
                       >
@@ -441,7 +443,7 @@ export default function TermsOfService() {
                         fontWeight: 600,
                         fontSize: "32px",
                         lineHeight: "40px",
-                        color: "#006071",
+                        color: "#0B4A5C",
                       }}
                     >
                       {t("terms.safety.title")}
@@ -494,7 +496,7 @@ export default function TermsOfService() {
                               }}
                             >
                               <CheckCircleIcon
-                                sx={{ fontSize: 22, color: "#006071", mt: 0.3 }}
+                                sx={{ fontSize: 22, color: "#0B4A5C", mt: 0.3 }}
                               />
                               <Typography
                                 sx={{
@@ -517,7 +519,7 @@ export default function TermsOfService() {
                         right: -40,
                         bottom: -40,
                         fontSize: 240,
-                        color: "#006071",
+                        color: "#0B4A5C",
                         opacity: 0.05,
                       }}
                     />
@@ -546,7 +548,7 @@ export default function TermsOfService() {
                         fontWeight: 600,
                         fontSize: "32px",
                         lineHeight: "40px",
-                        color: "#006071",
+                        color: "#0B4A5C",
                       }}
                     >
                       {t("terms.liability.title")}
@@ -609,7 +611,7 @@ export default function TermsOfService() {
                 fontWeight: 600,
                 fontSize: "32px",
                 lineHeight: "40px",
-                color: "#006071",
+                color: "#0B4A5C",
                 mb: 2,
               }}
             >
@@ -639,7 +641,7 @@ export default function TermsOfService() {
                 variant="contained"
                 startIcon={<MailIcon />}
                 sx={{
-                  backgroundColor: "#006071",
+                  backgroundColor: "#0B4A5C",
                   color: "#fff",
                   px: 5,
                   py: 2,
@@ -647,7 +649,7 @@ export default function TermsOfService() {
                   fontSize: "16px",
                   fontWeight: 700,
                   "&:hover": {
-                    backgroundColor: "#004e5d",
+                    backgroundColor: "#083A4A",
                     transform: "scale(1.05)",
                   },
                   transition: "all 0.3s ease",
@@ -658,8 +660,8 @@ export default function TermsOfService() {
               <Button
                 variant="outlined"
                 sx={{
-                  borderColor: "#006071",
-                  color: "#006071",
+                  borderColor: "#0B4A5C",
+                  color: "#0B4A5C",
                   px: 5,
                   py: 2,
                   borderRadius: "999px",
@@ -667,7 +669,7 @@ export default function TermsOfService() {
                   fontWeight: 700,
                   "&:hover": {
                     backgroundColor: "rgba(0, 96, 113, 0.05)",
-                    borderColor: "#006071",
+                    borderColor: "#0B4A5C",
                   },
                   transition: "all 0.3s ease",
                 }}

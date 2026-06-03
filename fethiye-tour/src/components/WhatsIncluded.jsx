@@ -1,4 +1,4 @@
-import { Box, Typography, Container, Grid } from "@mui/material";
+import { Box, Typography, Container, Stack } from "@mui/material";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 import LunchDiningIcon from "@mui/icons-material/LunchDining";
 import SailingIcon from "@mui/icons-material/Sailing";
@@ -59,7 +59,7 @@ export default function WhatsIncluded() {
         backgroundColor: "#f6f3ee",
       }}
     >
-      <Container maxWidth="xl" disableGutters sx={{ maxWidth: "1280px" }}>
+      <Container maxWidth="xl" disableGutters sx={{ maxWidth: "1440px" }}>
         <FadeInBox>
           <Box sx={{ textAlign: "center", mb: 8 }}>
             <Typography
@@ -73,7 +73,7 @@ export default function WhatsIncluded() {
                 mb: 2,
               }}
             >
-              {t('included.title')}
+              {t("included.title")}
             </Typography>
             <Typography
               sx={{
@@ -84,15 +84,28 @@ export default function WhatsIncluded() {
                 mx: "auto",
               }}
             >
-              {t('included.subtitle')}
+              {t("included.subtitle")}
             </Typography>
           </Box>
         </FadeInBox>
 
         <FadeInBox delay={200}>
-          <Grid container spacing={4} justifyContent="center">
+          <Stack
+            direction="row"
+            flexWrap="wrap"
+            justifyContent="center"
+            columnGap={{ xs: 2, sm: 4, md: 8 }}
+            rowGap={{ xs: 6, md: 4 }}
+          >
             {items.map((item, index) => (
-              <Grid item xs={6} md={2.4} key={index}>
+              <Stack 
+                key={index}
+                alignItems="center"
+                sx={{
+                  flexBasis: { xs: "calc(50% - 8px)", sm: "calc(33.333% - 22px)", md: "auto" },
+                  minWidth: { md: "140px" },
+                }}
+              >
                 <Box
                   sx={{
                     display: "flex",
@@ -103,19 +116,21 @@ export default function WhatsIncluded() {
                 >
                   <Box
                     sx={{
-                      width: 64,
-                      height: 64,
+                      width: { xs: 64, md: 80 },
+                      height: { xs: 64, md: 80 },
                       borderRadius: "50%",
-                      backgroundColor: "#0b7a8f",
-                      color: "#fff",
+                      backgroundColor: "rgba(11, 74, 92, 0.08)",
+                      color: "#0B4A5C",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      mb: 2,
-                      transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                      mb: { xs: 2, md: 3 },
+                      transition: "all 0.3s ease",
                       "&:hover": {
-                        transform: "scale(1.1)",
-                        boxShadow: "0 8px 24px rgba(11, 122, 143, 0.3)",
+                        transform: "translateY(-8px)",
+                        backgroundColor: "#0B4A5C",
+                        color: "#fff",
+                        boxShadow: "0 12px 24px rgba(11, 74, 92, 0.2)",
                       },
                     }}
                   >
@@ -125,7 +140,7 @@ export default function WhatsIncluded() {
                     sx={{
                       fontFamily: '"Playfair Display", serif',
                       fontWeight: 600,
-                      fontSize: "18px",
+                      fontSize: { xs: "16px", md: "18px" },
                       lineHeight: "24px",
                       color: "#1c1c19",
                     }}
@@ -133,9 +148,9 @@ export default function WhatsIncluded() {
                     {t(`included.${item.key}`)}
                   </Typography>
                 </Box>
-              </Grid>
+              </Stack>
             ))}
-          </Grid>
+          </Stack>
         </FadeInBox>
       </Container>
     </Box>

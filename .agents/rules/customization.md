@@ -55,13 +55,13 @@ Projeye başlarken `createTheme` kullanılarak global bir tema oluşturulmalı v
 
 ### 3. Routes & Packages (Koy Koy Fethiye Sayfası)
 
-- **Our Routes:** `Grid` yapısında 3x2 `Card` tasarımı. Görseller `CardMedia` ile eklenecek.
+- **Our Routes:** `Stack` yapısında 3x2 `Card` tasarımı. Görseller `CardMedia` ile eklenecek.
 - **What's Included:** Yatay sıralama için `Stack` (direction="row"), dairesel kapsayıcılar içinde MUI Icons.
 - **Packages (Fiyatlandırma):** 3 adet `Card`. Ortadaki "Sunset Tour" öne çıkarılmalı (Örn: `elevation={4}`, arka plan rengi `primary.main`, metinler beyaz). Liste özellikleri için `List` ve `ListItem` bileşenleri.
 
 ### 4. Privacy Policy & Terms of Service (Hukuki Sayfalar)
 
-- **Düzen (Layout):** MUI `Container` ve ana iskelet için 12 sütunlu `Grid` kullanılmalı (Örn: Sidebar 3 sütun, İçerik 9 sütun).
+- **Düzen (Layout):** MUI `Container` ve ana iskelet için 12 sütunlu `Stack` kullanılmalı (Örn: Sidebar 3 sütun, İçerik 9 sütun).
 - **Sol Sidebar:** `List` ve `ListItemButton` kullanılarak sayfa içi gezinme menüsü yapılmalı. Scroll sırasında sabit kalması için `sx={{ position: 'sticky', top: 80 }}` kullanılmalı.
 - **Sağ İçerik Alanı:** `Typography` bileşenleri ile yapılandırılmış, `Paper` veya `Card` içine alınmış özel vurgu kutuları (Örn: Cancellation Policy alanı).
 

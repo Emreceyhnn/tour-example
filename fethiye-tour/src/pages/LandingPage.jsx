@@ -6,10 +6,12 @@ import GallerySection from "../components/GallerySection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import BookingCTA from "../components/BookingCTA";
 import Footer from "../components/Footer";
+import SEO from "../components/SEO";
 
 export default function LandingPage() {
   return (
     <>
+      <SEO titleKey="seo.home.title" descKey="seo.home.desc" canonical="/" />
       <Navbar />
       <main>
         <HeroSection />

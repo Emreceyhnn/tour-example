@@ -21,12 +21,30 @@
   "routes": {
     "title": "Rotalarımız",
     "subtitle": "Akdeniz sahillerinin el değmemiş güzelliğini keşfedin.",
-    "oludeniz": { "title": "Ölüdeniz", "desc": "Sakin ve kristal berraklığındaki sularıyla dünyaca ünlü Ölüdeniz." },
-    "butterfly": { "title": "Kelebekler Vadisi", "desc": "Sarp kayalıklarla çevrili, sadece tekneyle ulaşılabilen bir doğa harikası." },
-    "stnicholas": { "title": "Gemiler Adası", "desc": "Antik kalıntıları keşfedin ve nefes kesen bir gün batımı izleyin." },
-    "gemiler": { "title": "Darboğaz", "desc": "Zeytin ve çam ağaçlarıyla çevrili sakin bir koy." },
-    "saklikent": { "title": "Saklıkent", "desc": "Etkileyici kanyonlar ve buz gibi dağ nehirleri." },
-    "gocek": { "title": "Göcek Adaları", "desc": "Sayısız ada ve tenha koyuyla denizcilerin cenneti." }
+    "oludeniz": {
+      "title": "Ölüdeniz",
+      "desc": "Sakin ve kristal berraklığındaki sularıyla dünyaca ünlü Ölüdeniz."
+    },
+    "butterfly": {
+      "title": "Kelebekler Vadisi",
+      "desc": "Sarp kayalıklarla çevrili, sadece tekneyle ulaşılabilen bir doğa harikası."
+    },
+    "stnicholas": {
+      "title": "Gemiler Adası",
+      "desc": "Antik kalıntıları keşfedin ve nefes kesen bir gün batımı izleyin."
+    },
+    "gemiler": {
+      "title": "Darboğaz",
+      "desc": "Zeytin ve çam ağaçlarıyla çevrili sakin bir koy."
+    },
+    "saklikent": {
+      "title": "Saklıkent",
+      "desc": "Etkileyici kanyonlar ve buz gibi dağ nehirleri."
+    },
+    "gocek": {
+      "title": "Göcek Adaları",
+      "desc": "Sayısız ada ve tenha koyuyla denizcilerin cenneti."
+    }
   },
   "included": {
     "title": "Neler Dahil",
@@ -40,7 +58,8 @@
   },
   "booking": {
     "title": "Yelken Açmaya Hazır Mısınız?",
-    "subtitle": "En hızlı yanıt ve kişiselleştirilmiş rezervasyon için bizimle doğrudan WhatsApp üzerinden iletişime geçin."
+    "subtitle": "En hızlı yanıt ve kişiselleştirilmiş rezervasyon için bizimle doğrudan WhatsApp üzerinden iletişime geçin.",
+    "button": "Rezervasyon yap"
   },
   "gallery": {
     "title": "Galeri",
@@ -78,9 +97,18 @@
       "title": "Felsefemiz",
       "subtitle": "Denizin ritminin rehberliğinde.",
       "cards": {
-        "slow": { "title": "Yavaş Seyahat", "desc": "Aceleyi geride bırakın. Aceleye getirilmemiş sabahlara, demir atılmış uzun öğle yemeklerine ve dünyanın en güzel koylarında zamanın lüksüne inanıyoruz." },
-        "flavors": { "title": "Otantik Lezzetler", "desc": "Şeflerimiz her gün yerel pazarlardan ve balıkçılardan taze ürünler alarak Türk misafirperverliğinin mirasını kutlayan Ege ziyafetleri hazırlıyor." },
-        "hidden": { "title": "Gizli Sığınaklar", "desc": "Kalabalıktan kaçının. Sizi turkuazın en saf olduğu, sadece denizden ulaşılabilen gizli Fethiye ve Göcek koylarına götürüyoruz." }
+        "slow": {
+          "title": "Yavaş Seyahat",
+          "desc": "Aceleyi geride bırakın. Aceleye getirilmemiş sabahlara, demir atılmış uzun öğle yemeklerine ve dünyanın en güzel koylarında zamanın lüksüne inanıyoruz."
+        },
+        "flavors": {
+          "title": "Otantik Lezzetler",
+          "desc": "Şeflerimiz her gün yerel pazarlardan ve balıkçılardan taze ürünler alarak Türk misafirperverliğinin mirasını kutlayan Ege ziyafetleri hazırlıyor."
+        },
+        "hidden": {
+          "title": "Gizli Sığınaklar",
+          "desc": "Kalabalıktan kaçının. Sizi turkuazın en saf olduğu, sadece denizden ulaşılabilen gizli Fethiye ve Göcek koylarına götürüyoruz."
+        }
       }
     },
     "crew": {
@@ -94,8 +122,20 @@
       "title": "Filomuz",
       "subtitle": "Özenle seçilmiş lüks gulet koleksiyonumuzu keşfedin.",
       "button": "Teknik Özellikleri İncele",
-      "f1": { "badge": "Amiral Gemisi", "name": "Ege Yıldızı", "desc": "Ege'nin Yıldızı", "spec1": "32 Metre", "spec2": "6 En-suite Kabin" },
-      "f2": { "badge": "Samimi", "name": "Mavi Düş", "desc": "Mavi Rüya", "spec1": "24 Metre", "spec2": "4 En-suite Kabin" }
+      "f1": {
+        "badge": "Amiral Gemisi",
+        "name": "Ege Yıldızı",
+        "desc": "Ege'nin Yıldızı",
+        "spec1": "32 Metre",
+        "spec2": "6 En-suite Kabin"
+      },
+      "f2": {
+        "badge": "Samimi",
+        "name": "Mavi Düş",
+        "desc": "Mavi Rüya",
+        "spec1": "24 Metre",
+        "spec2": "4 En-suite Kabin"
+      }
     },
     "sustainability": {
       "tag": "Sürdürülebilirlik",
@@ -144,9 +184,18 @@
       }
     },
     "tips": {
-      "t1": { "title": "Ne Zaman Gidilir", "text": "Mayıs-Haziran ve Eylül-Ekim, Ağustos'un bunaltıcı sıcağından kaçınarak sıcak su ve serinletici rüzgarların mükemmel dengesini sunar." },
-      "t2": { "title": "Ne Paketlenmeli", "text": "Polarize güneş gözlüğü, resifleri korumak için biyolojik olarak parçalanabilen güneş kremi ve güvertede akşam esintileri için keten bir gömlek." },
-      "t3": { "title": "Özel Turlar", "text": "Özel bir gulet rezervasyonu yapmak, kalabalıklar gelmeden bu koylara erişmenizi ve günlük tekneler ayrıldıktan çok sonra bile kalmanızı sağlar." }
+      "t1": {
+        "title": "Ne Zaman Gidilir",
+        "text": "Mayıs-Haziran ve Eylül-Ekim, Ağustos'un bunaltıcı sıcağından kaçınarak sıcak su ve serinletici rüzgarların mükemmel dengesini sunar."
+      },
+      "t2": {
+        "title": "Ne Paketlenmeli",
+        "text": "Polarize güneş gözlüğü, resifleri korumak için biyolojik olarak parçalanabilen güneş kremi ve güvertede akşam esintileri için keten bir gömlek."
+      },
+      "t3": {
+        "title": "Özel Turlar",
+        "text": "Özel bir gulet rezervasyonu yapmak, kalabalıklar gelmeden bu koylara erişmenizi ve günlük tekneler ayrıldıktan çok sonra bile kalmanızı sağlar."
+      }
     }
   },
   "privacy": {
@@ -169,8 +218,14 @@
     "s2": {
       "title": "Bilgilerin Kullanımı",
       "subtitle": "Bilgileriniz tek bir amaca hizmet eder: mükemmel bir Akdeniz kaçamağı düzenlemek. Verilerinizi şu amaçlarla kullanırız:",
-      "c1": { "title": "Hizmetin Yerine Getirilmesi", "desc": "Rezervasyonları işleme koymak ve tercih ettiğiniz rotayı hazırlamak için mürettebatımızla koordinasyon sağlamak." },
-      "c2": { "title": "İletişim", "desc": "Gerekli seyahat belgelerini, güvenlik protokollerini ve özenle hazırlanmış Akdeniz rehberlerini göndermek." }
+      "c1": {
+        "title": "Hizmetin Yerine Getirilmesi",
+        "desc": "Rezervasyonları işleme koymak ve tercih ettiğiniz rotayı hazırlamak için mürettebatımızla koordinasyon sağlamak."
+      },
+      "c2": {
+        "title": "İletişim",
+        "desc": "Gerekli seyahat belgelerini, güvenlik protokollerini ve özenle hazırlanmış Akdeniz rehberlerini göndermek."
+      }
     },
     "s3": {
       "title": "Çerezler ve İzleme",
@@ -210,8 +265,14 @@
     },
     "cancellation": {
       "title": "İptal Politikası",
-      "c1": { "title": "60+ Gün Önce", "desc": "Depozito iade edilmez, ancak başka bir iptal ücreti uygulanmaz. Sezona bağlı olarak yeniden planlama seçenekleri sunulabilir." },
-      "c2": { "title": "30 Günden Az", "desc": "Toplam kira bedelinin %100'ü iade edilemez. Kapsamlı seyahat sigortası yaptırmanızı önemle tavsiye ederiz." }
+      "c1": {
+        "title": "60+ Gün Önce",
+        "desc": "Depozito iade edilmez, ancak başka bir iptal ücreti uygulanmaz. Sezona bağlı olarak yeniden planlama seçenekleri sunulabilir."
+      },
+      "c2": {
+        "title": "30 Günden Az",
+        "desc": "Toplam kira bedelinin %100'ü iade edilemez. Kapsamlı seyahat sigortası yaptırmanızı önemle tavsiye ederiz."
+      }
     },
     "safety": {
       "title": "Güvenlik Kuralları",
@@ -234,6 +295,28 @@
       "p1": "Konsiyerj ekibimiz, içinizin rahat etmesi adına şart ve koşullarımızın herhangi bir yönünü açıklığa kavuşturmak için hizmetinizdedir.",
       "btn1": "Hukuk Ekibiyle İletişime Geç",
       "btn2": "PDF İndir"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Lüks Gulet Turları ve Yat Kiralama",
+      "desc": "Premium lüks gulet kiralama hizmetimizle Fethiye'nin gizli koylarını keşfedin. Akdeniz'in sonsuz mavisini deneyimleyin."
+    },
+    "bayguide": {
+      "title": "Fethiye Koy Rehberi ve Rotalar",
+      "desc": "Kapsamlı koy rehberimizle Turkuaz Kıyının bozulmamış koylarını, antik kalıntılarını ve gizli sığınaklarını keşfedin."
+    },
+    "about": {
+      "title": "Hikayemiz ve Mirasımız",
+      "desc": "1998'den beri Akdeniz'de zamansız anılar yaratıyoruz. Mürettebatımızla tanışın ve özenle seçilmiş lüks gulet filomuzu keşfedin."
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "desc": "Mavi Rota'nın güvenli bir Akdeniz yolculuğu için kişisel verilerinizi nasıl özen ve hassasiyetle işlediğini öğrenin."
+    },
+    "terms": {
+      "title": "Hizmet Şartları",
+      "desc": "Unutulmaz bir gulet deneyimi için rezervasyon koşullarımız, iptal politikamız ve güvenlik kurallarımız."
     }
   }
 }

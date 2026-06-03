@@ -1,4 +1,4 @@
-import { Box, Typography, Container, Grid, Button } from "@mui/material";
+import { Box, Typography, Container, Stack, Button } from "@mui/material";
 import SailingIcon from "@mui/icons-material/Sailing";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 import LandscapeIcon from "@mui/icons-material/Landscape";
@@ -6,12 +6,20 @@ import EcoIcon from "@mui/icons-material/Public";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import AboutHero from "../components/about/AboutHero";
+import AboutHeritage from "../components/about/AboutHeritage";
+import AboutPhilosophy from "../components/about/AboutPhilosophy";
+import AboutCrew from "../components/about/AboutCrew";
+import AboutFleet from "../components/about/AboutFleet";
+import AboutSustainability from "../components/about/AboutSustainability";
+import SEO from "../components/SEO";
 import { useTranslation } from "react-i18next";
 
 export default function AboutUsPage() {
   const { t } = useTranslation();
   return (
     <>
+      <SEO titleKey="seo.about.title" descKey="seo.about.desc" canonical="/about" />
       <Navbar />
 
       <Box component="main" sx={{ pt: { xs: 10, md: 0 } }}>
@@ -68,7 +76,7 @@ export default function AboutUsPage() {
                 },
               }}
             >
-              {t('about.hero.title')}
+              {t("about.hero.title")}
             </Typography>
             <Typography
               sx={{
@@ -80,7 +88,7 @@ export default function AboutUsPage() {
                 opacity: 0.9,
               }}
             >
-              {t('about.hero.subtitle')}
+              {t("about.hero.subtitle")}
             </Typography>
           </Box>
         </Box>
@@ -95,8 +103,18 @@ export default function AboutUsPage() {
             mx: "auto",
           }}
         >
-          <Grid container spacing={{ xs: 8, md: 10 }} alignItems="center">
-            <Grid item xs={12} md={6} sx={{ order: { xs: 2, md: 1 } }}>
+          <Stack
+            direction={{ xs: "column", md: "row" }}
+            spacing={{ xs: 8, md: 10 }}
+            alignItems="center"
+          >
+            <Box
+              sx={{
+                width: { xs: "100%", md: "50%" },
+                flex: { md: 1 },
+                order: { xs: 2, md: 1 },
+              }}
+            >
               <Box sx={{ position: "relative" }}>
                 <Box
                   sx={{
@@ -125,7 +143,7 @@ export default function AboutUsPage() {
                 >
                   <Box
                     component="img"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlQxNiR78l6CIk4KK0Gg7VZVw8PRjYiETh5rhLrtLi9pZpTuJ54tHHHrEMPS75bF4uEpmSvlpTmVumLfX59XCG4KQE3e7zKer30UI0jKAqzbVgWSuZ8BQ1wtJuAGX5uPKlJ-QWS7sNRHXG9eMdpLe1U_h7hof6d8T0spZQaiaJbxuUIIkqXn-no5tOpdLk0v9ELsoEnWv63G0q7HVdMMCiZyt-rJmY8CvK2BcCn48I7GOnm1x1AI_oF-3m8ysu77E7nYQsJjqYZCE"
+                    src="/ship.webp"
                     alt="Turkish Gulet Craftsmanship"
                     sx={{
                       borderRadius: "8px",
@@ -136,8 +154,14 @@ export default function AboutUsPage() {
                   />
                 </Box>
               </Box>
-            </Grid>
-            <Grid item xs={12} md={6} sx={{ order: { xs: 1, md: 2 } }}>
+            </Box>
+            <Box
+              sx={{
+                width: { xs: "100%", md: "50%" },
+                flex: { md: 1 },
+                order: { xs: 1, md: 2 },
+              }}
+            >
               <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
                 <Typography
                   variant="h2"
@@ -145,17 +169,23 @@ export default function AboutUsPage() {
                     fontFamily: '"Playfair Display", serif',
                     fontWeight: 700,
                     fontSize: { xs: "32px", md: "48px" },
-                    color: "#006071",
+                    color: "#0B4A5C",
                     lineHeight: 1.2,
                   }}
                 >
-                  {t('about.heritage.title')}
+                  {t("about.heritage.title")}
                 </Typography>
-                <Typography sx={{ fontSize: "20px", color: "#3e484c", lineHeight: "32px" }}>
-                  {t('about.heritage.p1')}
+                <Typography
+                  sx={{
+                    fontSize: "20px",
+                    color: "#3e484c",
+                    lineHeight: "32px",
+                  }}
+                >
+                  {t("about.heritage.p1")}
                 </Typography>
                 <Typography sx={{ color: "#3e484c", lineHeight: "24px" }}>
-                  {t('about.heritage.p2')}
+                  {t("about.heritage.p2")}
                 </Typography>
                 <Box sx={{ display: "flex", gap: 4, pt: 2 }}>
                   <Box sx={{ textAlign: "center" }}>
@@ -164,11 +194,11 @@ export default function AboutUsPage() {
                         fontFamily: '"Playfair Display", serif',
                         fontSize: "32px",
                         fontWeight: 600,
-                        color: "#006071",
+                        color: "#0B4A5C",
                         display: "block",
                       }}
                     >
-                      {t('about.heritage.stat1_value')}
+                      {t("about.heritage.stat1_value")}
                     </Typography>
                     <Typography
                       sx={{
@@ -179,7 +209,7 @@ export default function AboutUsPage() {
                         textTransform: "uppercase",
                       }}
                     >
-                      {t('about.heritage.stat1_label')}
+                      {t("about.heritage.stat1_label")}
                     </Typography>
                   </Box>
                   <Box sx={{ textAlign: "center" }}>
@@ -188,11 +218,11 @@ export default function AboutUsPage() {
                         fontFamily: '"Playfair Display", serif',
                         fontSize: "32px",
                         fontWeight: 600,
-                        color: "#006071",
+                        color: "#0B4A5C",
                         display: "block",
                       }}
                     >
-                      {t('about.heritage.stat2_value')}
+                      {t("about.heritage.stat2_value")}
                     </Typography>
                     <Typography
                       sx={{
@@ -203,13 +233,13 @@ export default function AboutUsPage() {
                         textTransform: "uppercase",
                       }}
                     >
-                      {t('about.heritage.stat2_label')}
+                      {t("about.heritage.stat2_label")}
                     </Typography>
                   </Box>
                 </Box>
               </Box>
-            </Grid>
-          </Grid>
+            </Box>
+          </Stack>
         </Box>
 
         {/* Our Philosophy Section */}
@@ -237,7 +267,10 @@ export default function AboutUsPage() {
                 "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23000' fill-opacity='1' d='M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E\")",
             }}
           />
-          <Container maxWidth="xl" sx={{ maxWidth: "1280px", px: { xs: 2, md: "80px" } }}>
+          <Container
+            maxWidth="xl"
+            sx={{ maxWidth: "1280px", px: { xs: 2, md: "80px" } }}
+          >
             <Box sx={{ textAlign: "center", mb: 8, pt: 8 }}>
               <Typography
                 variant="h2"
@@ -245,20 +278,24 @@ export default function AboutUsPage() {
                   fontFamily: '"Playfair Display", serif',
                   fontWeight: 700,
                   fontSize: { xs: "32px", md: "48px" },
-                  color: "#006071",
+                  color: "#0B4A5C",
                   mb: 2,
                 }}
               >
-                {t('about.philosophy.title')}
+                {t("about.philosophy.title")}
               </Typography>
               <Typography sx={{ fontSize: "20px", color: "#3e484c" }}>
-                {t('about.philosophy.subtitle')}
+                {t("about.philosophy.subtitle")}
               </Typography>
             </Box>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={4}>
+            <Stack direction={{ xs: "column", md: "row" }} spacing={3}>
+              <Box sx={{ flex: 1, width: "100%" }}>
                 <Box
                   sx={{
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
                     background: "rgba(250, 247, 242, 0.7)",
                     backdropFilter: "blur(16px)",
                     border: "1px solid rgba(255, 255, 255, 0.2)",
@@ -266,12 +303,12 @@ export default function AboutUsPage() {
                     p: 5,
                     textAlign: "center",
                     borderRadius: "12px",
-                    borderTop: "4px solid #006071",
+                    borderTop: "4px solid #0B4A5C",
                     transition: "transform 0.3s",
                     "&:hover": { transform: "scale(1.02)" },
                   }}
                 >
-                  <SailingIcon sx={{ fontSize: 48, color: "#006071", mb: 3 }} />
+                  <SailingIcon sx={{ fontSize: 48, color: "#0B4A5C", mb: 3 }} />
                   <Typography
                     variant="h3"
                     sx={{
@@ -282,16 +319,20 @@ export default function AboutUsPage() {
                       mb: 2,
                     }}
                   >
-                    {t('about.philosophy.cards.slow.title')}
+                    {t("about.philosophy.cards.slow.title")}
                   </Typography>
                   <Typography sx={{ color: "#3e484c" }}>
-                    {t('about.philosophy.cards.slow.desc')}
+                    {t("about.philosophy.cards.slow.desc")}
                   </Typography>
                 </Box>
-              </Grid>
-              <Grid item xs={12} md={4}>
+              </Box>
+              <Box sx={{ flex: 1, width: "100%" }}>
                 <Box
                   sx={{
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
                     background: "rgba(250, 247, 242, 0.7)",
                     backdropFilter: "blur(16px)",
                     border: "1px solid rgba(255, 255, 255, 0.2)",
@@ -304,7 +345,9 @@ export default function AboutUsPage() {
                     "&:hover": { transform: "scale(1.02)" },
                   }}
                 >
-                  <RestaurantIcon sx={{ fontSize: 48, color: "#6b5d3f", mb: 3 }} />
+                  <RestaurantIcon
+                    sx={{ fontSize: 48, color: "#6b5d3f", mb: 3 }}
+                  />
                   <Typography
                     variant="h3"
                     sx={{
@@ -315,16 +358,20 @@ export default function AboutUsPage() {
                       mb: 2,
                     }}
                   >
-                    {t('about.philosophy.cards.flavors.title')}
+                    {t("about.philosophy.cards.flavors.title")}
                   </Typography>
                   <Typography sx={{ color: "#3e484c" }}>
-                    {t('about.philosophy.cards.flavors.desc')}
+                    {t("about.philosophy.cards.flavors.desc")}
                   </Typography>
                 </Box>
-              </Grid>
-              <Grid item xs={12} md={4}>
+              </Box>
+              <Box sx={{ flex: 1, width: "100%" }}>
                 <Box
                   sx={{
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
                     background: "rgba(250, 247, 242, 0.7)",
                     backdropFilter: "blur(16px)",
                     border: "1px solid rgba(255, 255, 255, 0.2)",
@@ -337,7 +384,9 @@ export default function AboutUsPage() {
                     "&:hover": { transform: "scale(1.02)" },
                   }}
                 >
-                  <LandscapeIcon sx={{ fontSize: 48, color: "#0b7a8f", mb: 3 }} />
+                  <LandscapeIcon
+                    sx={{ fontSize: 48, color: "#0b7a8f", mb: 3 }}
+                  />
                   <Typography
                     variant="h3"
                     sx={{
@@ -348,14 +397,14 @@ export default function AboutUsPage() {
                       mb: 2,
                     }}
                   >
-                    {t('about.philosophy.cards.hidden.title')}
+                    {t("about.philosophy.cards.hidden.title")}
                   </Typography>
                   <Typography sx={{ color: "#3e484c" }}>
-                    {t('about.philosophy.cards.hidden.desc')}
+                    {t("about.philosophy.cards.hidden.desc")}
                   </Typography>
                 </Box>
-              </Grid>
-            </Grid>
+              </Box>
+            </Stack>
           </Container>
           {/* Bottom Wave */}
           <Box
@@ -384,32 +433,46 @@ export default function AboutUsPage() {
             mx: "auto",
           }}
         >
-          <Grid container spacing={{ xs: 6, md: 10 }} alignItems="center" sx={{ mb: 10 }}>
-            <Grid item xs={12} md={6}>
+          <Stack
+            direction={{ xs: "column", md: "row" }}
+            spacing={{ xs: 6, md: 10 }}
+            alignItems="center"
+            sx={{ mb: 10 }}
+          >
+            <Box sx={{ width: { xs: "100%", md: "50%" }, flex: { md: 1 } }}>
               <Typography
                 variant="h2"
                 sx={{
                   fontFamily: '"Playfair Display", serif',
                   fontWeight: 700,
                   fontSize: { xs: "32px", md: "48px" },
-                  color: "#006071",
+                  color: "#0B4A5C",
                   mb: 4,
                   lineHeight: 1.2,
                 }}
               >
-                {t('about.crew.title')}
+                {t("about.crew.title")}
               </Typography>
-              <Typography sx={{ fontSize: "20px", color: "#3e484c", lineHeight: "32px", mb: 3 }}>
-                {t('about.crew.p1')}
+              <Typography
+                sx={{
+                  fontSize: "20px",
+                  color: "#3e484c",
+                  lineHeight: "32px",
+                  mb: 3,
+                }}
+              >
+                {t("about.crew.p1")}
               </Typography>
               <Typography sx={{ color: "#3e484c", lineHeight: "24px" }}>
-                {t('about.crew.p2')}
+                {t("about.crew.p2")}
               </Typography>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Grid container spacing={3}>
-                <Grid item xs={6}>
-                  <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            </Box>
+            <Box sx={{ width: { xs: "100%", md: "50%" }, flex: { md: 1 } }}>
+              <Stack direction="row" spacing={3}>
+                <Box sx={{ flex: 1 }}>
+                  <Box
+                    sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                  >
                     <Box
                       component="img"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Zv7LTeG3O5bFBZPn-UQb8YBJoJcf-OSP-0-nXHJi3ILOnz6cNYqj0ZRIHBzGrfUSDXvY5jrss9oxM9ms4eRFBx0kAP-dOb9Wa-1phN-H1lslf9I1VXaL8bV4YSMPmVALQYAo6JOuZrKUUHG7raa1T7bmZfjfu-0xpN7EbjtgI7quZG2KNh7W2PubPEtm79_GPLNlsPLe1ApGS5hGIDll4kl_2P0o2lltuZSxR-eT-vgOazGnPTA0CmEn8TuIFc7hPA8mRQBIvtQ"
@@ -429,10 +492,10 @@ export default function AboutUsPage() {
                           fontFamily: '"Playfair Display", serif',
                           fontWeight: 600,
                           fontSize: "32px",
-                          color: "#006071",
+                          color: "#0B4A5C",
                         }}
                       >
-                        {t('about.crew.c1.name')}
+                        {t("about.crew.c1.name")}
                       </Typography>
                       <Typography
                         sx={{
@@ -443,13 +506,20 @@ export default function AboutUsPage() {
                           textTransform: "uppercase",
                         }}
                       >
-                        {t('about.crew.c1.role')}
+                        {t("about.crew.c1.role")}
                       </Typography>
                     </Box>
                   </Box>
-                </Grid>
-                <Grid item xs={6}>
-                  <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 6 }}>
+                </Box>
+                <Box sx={{ flex: 1 }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 2,
+                      mt: 6,
+                    }}
+                  >
                     <Box
                       component="img"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1m2mPkmXjt8qScjGs2ZnLpc_Fvjz5smM7bFrJzM2sFxmhQ3NYxyh5HWM7ggWbVRQ5EmOYxPlL3yKgqxU8yUkC1ktLosehjT_Aji0PBo4FkqTdoW3hLh_DZ74EA-Y-557eG15emn1OAwjmA1F1HjRosWANPK4XUdEyd8tCIrM7kfnjUYtGRPcIL6YC8_oKe8r-uvu6VzVSRqrQzdSXnXpUuAuncX7dvhEiBN0iw6gUxNA8X9LbC-d1X5wjeDi-KPdUItmPzbiMmug"
@@ -469,10 +539,10 @@ export default function AboutUsPage() {
                           fontFamily: '"Playfair Display", serif',
                           fontWeight: 600,
                           fontSize: "32px",
-                          color: "#006071",
+                          color: "#0B4A5C",
                         }}
                       >
-                        {t('about.crew.c2.name')}
+                        {t("about.crew.c2.name")}
                       </Typography>
                       <Typography
                         sx={{
@@ -483,14 +553,14 @@ export default function AboutUsPage() {
                           textTransform: "uppercase",
                         }}
                       >
-                        {t('about.crew.c2.role')}
+                        {t("about.crew.c2.role")}
                       </Typography>
                     </Box>
                   </Box>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Grid>
+                </Box>
+              </Stack>
+            </Box>
+          </Stack>
         </Box>
 
         {/* Our Fleet */}
@@ -501,7 +571,10 @@ export default function AboutUsPage() {
             backgroundColor: "rgba(229, 226, 221, 0.5)",
           }}
         >
-          <Container maxWidth="xl" sx={{ maxWidth: "1280px", px: { xs: 2, md: "80px" } }}>
+          <Container
+            maxWidth="xl"
+            sx={{ maxWidth: "1280px", px: { xs: 2, md: "80px" } }}
+          >
             <Box
               sx={{
                 display: "flex",
@@ -519,35 +592,40 @@ export default function AboutUsPage() {
                     fontFamily: '"Playfair Display", serif',
                     fontWeight: 700,
                     fontSize: { xs: "32px", md: "48px" },
-                    color: "#006071",
+                    color: "#0B4A5C",
                     mb: 2,
                   }}
                 >
-                  {t('about.fleet.title')}
+                  {t("about.fleet.title")}
                 </Typography>
                 <Typography sx={{ fontSize: "20px", color: "#3e484c" }}>
-                  {t('about.fleet.subtitle')}
+                  {t("about.fleet.subtitle")}
                 </Typography>
               </Box>
               <Button
                 variant="outlined"
                 sx={{
                   display: { xs: "none", md: "inline-flex" },
-                  borderColor: "#006071",
-                  color: "#006071",
+                  borderColor: "#0B4A5C",
+                  color: "#0B4A5C",
                   borderRadius: "999px",
                   px: 4,
                   py: 1.5,
-                  "&:hover": { backgroundColor: "#006071", color: "#ffffff" },
+                  "&:hover": { backgroundColor: "#0B4A5C", color: "#ffffff" },
                 }}
               >
-                {t('about.fleet.button')}
+                {t("about.fleet.button")}
               </Button>
             </Box>
-            <Grid container spacing={3}>
+            <Stack direction={{ xs: "column", md: "row" }} spacing={3}>
               {/* Gulet 1 */}
-              <Grid item xs={12} md={6}>
-                <Box sx={{ cursor: "pointer", "&:hover img": { transform: "scale(1.1)" } }}>
+              <Box sx={{ flex: 1, width: "100%" }}>
+                <Box
+                  sx={{
+                    cursor: "pointer",
+                    "&:hover img": { transform: "scale(1.1)" },
+                  }}
+                >
                   <Box
                     sx={{
                       position: "relative",
@@ -573,7 +651,7 @@ export default function AboutUsPage() {
                         position: "absolute",
                         top: 24,
                         left: 24,
-                        backgroundColor: "#006071",
+                        backgroundColor: "#0B4A5C",
                         color: "#ffffff",
                         px: 2,
                         py: 0.5,
@@ -584,10 +662,16 @@ export default function AboutUsPage() {
                         textTransform: "uppercase",
                       }}
                     >
-                      {t('about.fleet.f1.badge')}
+                      {t("about.fleet.f1.badge")}
                     </Box>
                   </Box>
-                  <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "flex-start",
+                    }}
+                  >
                     <Box>
                       <Typography
                         variant="h3"
@@ -595,16 +679,25 @@ export default function AboutUsPage() {
                           fontFamily: '"Playfair Display", serif',
                           fontWeight: 600,
                           fontSize: "32px",
-                          color: "#006071",
+                          color: "#0B4A5C",
                         }}
                       >
-                        {t('about.fleet.f1.name')}
+                        {t("about.fleet.f1.name")}
                       </Typography>
-                      <Typography sx={{ color: "#3e484c" }}>{t('about.fleet.f1.desc')}</Typography>
+                      <Typography sx={{ color: "#3e484c" }}>
+                        {t("about.fleet.f1.desc")}
+                      </Typography>
                     </Box>
                     <Box sx={{ textAlign: "right" }}>
-                      <Typography sx={{ fontSize: "20px", fontWeight: 700, color: "#6b5d3f", display: "block" }}>
-                        {t('about.fleet.f1.spec1')}
+                      <Typography
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: 700,
+                          color: "#6b5d3f",
+                          display: "block",
+                        }}
+                      >
+                        {t("about.fleet.f1.spec1")}
                       </Typography>
                       <Typography
                         sx={{
@@ -615,15 +708,20 @@ export default function AboutUsPage() {
                           textTransform: "uppercase",
                         }}
                       >
-                        {t('about.fleet.f1.spec2')}
+                        {t("about.fleet.f1.spec2")}
                       </Typography>
                     </Box>
                   </Box>
                 </Box>
-              </Grid>
+              </Box>
               {/* Gulet 2 */}
-              <Grid item xs={12} md={6}>
-                <Box sx={{ cursor: "pointer", "&:hover img": { transform: "scale(1.1)" } }}>
+              <Box sx={{ flex: 1, width: "100%" }}>
+                <Box
+                  sx={{
+                    cursor: "pointer",
+                    "&:hover img": { transform: "scale(1.1)" },
+                  }}
+                >
                   <Box
                     sx={{
                       position: "relative",
@@ -660,10 +758,16 @@ export default function AboutUsPage() {
                         textTransform: "uppercase",
                       }}
                     >
-                      {t('about.fleet.f2.badge')}
+                      {t("about.fleet.f2.badge")}
                     </Box>
                   </Box>
-                  <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "flex-start",
+                    }}
+                  >
                     <Box>
                       <Typography
                         variant="h3"
@@ -671,16 +775,25 @@ export default function AboutUsPage() {
                           fontFamily: '"Playfair Display", serif',
                           fontWeight: 600,
                           fontSize: "32px",
-                          color: "#006071",
+                          color: "#0B4A5C",
                         }}
                       >
-                        {t('about.fleet.f2.name')}
+                        {t("about.fleet.f2.name")}
                       </Typography>
-                      <Typography sx={{ color: "#3e484c" }}>{t('about.fleet.f2.desc')}</Typography>
+                      <Typography sx={{ color: "#3e484c" }}>
+                        {t("about.fleet.f2.desc")}
+                      </Typography>
                     </Box>
                     <Box sx={{ textAlign: "right" }}>
-                      <Typography sx={{ fontSize: "20px", fontWeight: 700, color: "#6b5d3f", display: "block" }}>
-                        {t('about.fleet.f2.spec1')}
+                      <Typography
+                        sx={{
+                          fontSize: "20px",
+                          fontWeight: 700,
+                          color: "#6b5d3f",
+                          display: "block",
+                        }}
+                      >
+                        {t("about.fleet.f2.spec1")}
                       </Typography>
                       <Typography
                         sx={{
@@ -691,13 +804,13 @@ export default function AboutUsPage() {
                           textTransform: "uppercase",
                         }}
                       >
-                        {t('about.fleet.f2.spec2')}
+                        {t("about.fleet.f2.spec2")}
                       </Typography>
                     </Box>
                   </Box>
                 </Box>
-              </Grid>
-            </Grid>
+              </Box>
+            </Stack>
           </Container>
         </Box>
 
@@ -710,7 +823,10 @@ export default function AboutUsPage() {
             overflow: "hidden",
           }}
         >
-          <Container maxWidth="xl" sx={{ maxWidth: "1280px", px: { xs: 2, md: "80px" } }}>
+          <Container
+            maxWidth="xl"
+            sx={{ maxWidth: "1280px", px: { xs: 2, md: "80px" } }}
+          >
             <Box
               sx={{
                 background: "rgba(250, 247, 242, 0.7)",
@@ -724,8 +840,22 @@ export default function AboutUsPage() {
                 alignItems: "center",
               }}
             >
-              <Box sx={{ flex: 1, display: "flex", flexDirection: "column", gap: 3 }}>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#006071" }}>
+              <Box
+                sx={{
+                  flex: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 3,
+                }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 1,
+                    color: "#0B4A5C",
+                  }}
+                >
                   <EcoIcon sx={{ fontSize: 32 }} />
                   <Typography
                     sx={{
@@ -735,7 +865,7 @@ export default function AboutUsPage() {
                       textTransform: "uppercase",
                     }}
                   >
-                    {t('about.sustainability.tag')}
+                    {t("about.sustainability.tag")}
                   </Typography>
                 </Box>
                 <Typography
@@ -744,31 +874,37 @@ export default function AboutUsPage() {
                     fontFamily: '"Playfair Display", serif',
                     fontWeight: 700,
                     fontSize: { xs: "32px", md: "48px" },
-                    color: "#006071",
+                    color: "#0B4A5C",
                   }}
                 >
-                  {t('about.sustainability.title')}
+                  {t("about.sustainability.title")}
                 </Typography>
-                <Typography sx={{ fontSize: "20px", color: "#3e484c", lineHeight: "32px" }}>
-                  {t('about.sustainability.desc')}
+                <Typography
+                  sx={{
+                    fontSize: "20px",
+                    color: "#3e484c",
+                    lineHeight: "32px",
+                  }}
+                >
+                  {t("about.sustainability.desc")}
                 </Typography>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
                   <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                     <CheckCircleIcon sx={{ color: "#6b5d3f" }} />
                     <Typography sx={{ color: "#3e484c" }}>
-                      {t('about.sustainability.points.0')}
+                      {t("about.sustainability.points.0")}
                     </Typography>
                   </Box>
                   <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                     <CheckCircleIcon sx={{ color: "#6b5d3f" }} />
                     <Typography sx={{ color: "#3e484c" }}>
-                      {t('about.sustainability.points.1')}
+                      {t("about.sustainability.points.1")}
                     </Typography>
                   </Box>
                   <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                     <CheckCircleIcon sx={{ color: "#6b5d3f" }} />
                     <Typography sx={{ color: "#3e484c" }}>
-                      {t('about.sustainability.points.2')}
+                      {t("about.sustainability.points.2")}
                     </Typography>
                   </Box>
                 </Box>

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Box, Typography, Container, Grid, Button } from "@mui/material";
+import { Box, Typography, Container, Grid, Button, Stack } from "@mui/material";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import KayakingIcon from "@mui/icons-material/Kayaking";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -9,6 +9,7 @@ import AnchorIcon from "@mui/icons-material/Anchor";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
+import SEO from "../components/SEO";
 
 /* ─── Scroll reveal wrapper ─── */
 function ScrollReveal({ children, delay = 0 }) {
@@ -58,14 +59,12 @@ function GlassCard({ children, sx = {}, ...props }) {
 }
 
 /* ─── Data ─── */
-const HERO_IMG = "route hero.webp";
-const WATER_IMG =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCZ35mXcobea1JqWQNGOmowiYJymvMZKHByCh1oWVnMpaA6mswYLWPdtT1r3_mREb042SrXeOjNbJY6HG2LqE-hraIPz6jU5IWZSIYI9GUxecvlAkrIkHagBmAXFAr7-wsgOg3G64lH5lniA4J73aKdfZdLITf7NMBaUd-TRPM2x7uM_xBU94-dvCyF7TiDSjngMI_X3vJQqTbvzBBkygWwiPWlXJCvpGIMgG-aIhyJGyE-y5fVThfjEaR8wZbHDC0cjQtHq2DBTrg";
+const HERO_IMG = "/route hero.webp";
 
 const bays = [
   {
     key: "oludeniz",
-    image: "oludeniz.webp",
+    image: "/oludeniz.webp",
     reverse: false,
     extras: "tips",
     tips: [
@@ -83,7 +82,7 @@ const bays = [
   },
   {
     key: "butterfly",
-    image: "kelebekler.webp",
+    image: "/kelebekler.webp",
     reverse: true,
     extras: "quote",
   },
@@ -99,15 +98,15 @@ const bays = [
 
 const travelTips = [
   {
-    icon: <WbSunnyIcon sx={{ fontSize: 30, color: "#006071" }} />,
+    icon: <WbSunnyIcon sx={{ fontSize: 30, color: "#0B4A5C" }} />,
     key: "t1",
   },
   {
-    icon: <LuggageIcon sx={{ fontSize: 30, color: "#006071" }} />,
+    icon: <LuggageIcon sx={{ fontSize: 30, color: "#0B4A5C" }} />,
     key: "t2",
   },
   {
-    icon: <AnchorIcon sx={{ fontSize: 30, color: "#006071" }} />,
+    icon: <AnchorIcon sx={{ fontSize: 30, color: "#0B4A5C" }} />,
     key: "t3",
   },
 ];
@@ -116,6 +115,7 @@ export default function BayGuidePage() {
   const { t } = useTranslation();
   return (
     <>
+      <SEO titleKey="seo.bayguide.title" descKey="seo.bayguide.desc" canonical="/bay-guide" />
       <Navbar />
 
       {/* ═══════ HERO ═══════ */}
@@ -151,7 +151,7 @@ export default function BayGuidePage() {
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(to bottom, rgba(252,249,244,0.7) 0%, rgba(252,249,244,0.9) 70%, #fcf9f4 100%)",
+              "linear-gradient(to bottom, rgba(252,249,244,0.1) 0%, rgba(252,249,244,0.5) 80%, #fcf9f4 100%)",
             zIndex: 1,
           }}
         />
@@ -175,7 +175,7 @@ export default function BayGuidePage() {
               mb: 2,
             }}
           >
-            {t('bayguide.hero.overline')}
+            {t("bayguide.hero.overline")}
           </Typography>
           <Typography
             variant="h1"
@@ -189,7 +189,7 @@ export default function BayGuidePage() {
               mb: 3,
             }}
           >
-            {t('bayguide.hero.title')}
+            {t("bayguide.hero.title")}
           </Typography>
           <Typography
             sx={{
@@ -200,7 +200,7 @@ export default function BayGuidePage() {
               mx: "auto",
             }}
           >
-            {t('bayguide.hero.subtitle')}
+            {t("bayguide.hero.subtitle")}
           </Typography>
         </Box>
       </Box>
@@ -235,11 +235,11 @@ export default function BayGuidePage() {
                     fontWeight: 600,
                     fontSize: "32px",
                     lineHeight: "40px",
-                    color: "#006071",
+                    color: "#0B4A5C",
                     mb: 3,
                   }}
                 >
-                  {t('bayguide.intro.title')}
+                  {t("bayguide.intro.title")}
                 </Typography>
                 <Typography
                   sx={{
@@ -248,44 +248,9 @@ export default function BayGuidePage() {
                     color: "#3e484c",
                   }}
                 >
-                  {t('bayguide.intro.desc')}
+                  {t("bayguide.intro.desc")}
                 </Typography>
               </GlassCard>
-            </ScrollReveal>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <ScrollReveal delay={200}>
-              <Box
-                sx={{
-                  position: "relative",
-                  borderRadius: "16px",
-                  overflow: "hidden",
-                  height: { xs: "260px", md: "100%" },
-                  minHeight: "260px",
-                  "&:hover .water-img": { transform: "scale(1.1)" },
-                }}
-              >
-                <Box
-                  component="img"
-                  className="water-img"
-                  src={WATER_IMG}
-                  alt="Turquoise Mediterranean water"
-                  sx={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    transition: "transform 0.7s ease",
-                  }}
-                />
-                <Box
-                  sx={{
-                    position: "absolute",
-                    inset: 0,
-                    backgroundColor: "rgba(0, 96, 113, 0.2)",
-                    mixBlendMode: "overlay",
-                  }}
-                />
-              </Box>
             </ScrollReveal>
           </Grid>
         </Grid>
@@ -299,153 +264,192 @@ export default function BayGuidePage() {
           }}
         >
           {/* Bays Grid */}
-          <Grid container spacing={{ xs: 8, md: 12 }}>
-              {bays.map((bay, index) => (
-                <Grid item xs={12} key={index}>
-                  <Grid
-                    container
-                    spacing={{ xs: 4, md: 8 }}
-                    alignItems="center"
-                    flexDirection={bay.reverse ? { xs: "row", md: "row-reverse" } : "row"}
-                  >
-                    {/* Image side */}
-                    <Grid item xs={12} md={7}>
-                      <ScrollReveal delay={index * 100}>
+          <Stack spacing={{ xs: 8, md: 12 }}>
+            {bays.map((bay, index) => (
+              <Stack key={index}>
+                <Stack
+                  spacing={{ xs: 4, md: 8 }}
+                  alignItems="center"
+                  direction={{
+                    xs: "row",
+                    md: bay.reverse ? "row-reverse" : "row",
+                  }}
+                >
+                  {/* Image side */}
+                  <Stack xs={12} md={6}>
+                    <ScrollReveal delay={index * 100}>
+                      <Box
+                        sx={{
+                          position: "relative",
+                          borderRadius: "24px",
+                          overflow: "hidden",
+                          height: { xs: 300, md: 450 },
+                          width: "100%",
+                          boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                          "&:hover img": {
+                            transform: "scale(1.05)",
+                          },
+                        }}
+                      >
                         <Box
+                          component="img"
+                          src={bay.image}
+                          alt={t(`bayguide.bays.${bay.key}.title`)}
                           sx={{
-                            position: "relative",
-                            borderRadius: "24px",
-                            overflow: "hidden",
-                            aspectRatio: "16/10",
-                            boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-                            "&:hover img": {
-                              transform: "scale(1.05)",
-                            },
+                            width: { xs: 300, md: 450 },
+                            height: { xs: 300, md: 450 },
+                            objectFit: "cover",
+                            transition:
+                              "transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1)",
+                          }}
+                        />
+                      </Box>
+                    </ScrollReveal>
+                  </Stack>
+                  {/* Text side */}
+                  <Stack xs={12} md={6}>
+                    <ScrollReveal delay={index * 100 + 200}>
+                      <Box
+                        sx={{
+                          pl: bay.reverse ? 0 : { md: 4 },
+                          pr: bay.reverse ? { md: 4 } : 0,
+                        }}
+                      >
+                        <Typography
+                          sx={{
+                            fontFamily: '"Anybody", sans-serif',
+                            fontWeight: 300,
+                            fontSize: "14px",
+                            letterSpacing: "0.1em",
+                            textTransform: "uppercase",
+                            color: "#0b7a8f",
+                            mb: 2,
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 2,
                           }}
                         >
                           <Box
-                            component="img"
-                            src={bay.image}
-                            alt={t(`bayguide.bays.${bay.key}.title`)}
+                            component="span"
                             sx={{
-                              width: "100%",
-                              height: "100%",
-                              objectFit: "cover",
-                              transition: "transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1)",
+                              width: "30px",
+                              height: "1px",
+                              backgroundColor: "#0b7a8f",
                             }}
                           />
-                        </Box>
-                      </ScrollReveal>
-                    </Grid>
-                    {/* Text side */}
-                    <Grid item xs={12} md={5}>
-                      <ScrollReveal delay={index * 100 + 200}>
-                        <Box sx={{ pl: bay.reverse ? 0 : { md: 4 }, pr: bay.reverse ? { md: 4 } : 0 }}>
-                          <Typography
-                            sx={{
-                              fontFamily: '"Anybody", sans-serif',
-                              fontWeight: 300,
-                              fontSize: "14px",
-                              letterSpacing: "0.1em",
-                              textTransform: "uppercase",
-                              color: "#0b7a8f",
-                              mb: 2,
-                              display: "flex",
-                              alignItems: "center",
-                              gap: 2,
-                            }}
-                          >
-                            <Box component="span" sx={{ width: "30px", height: "1px", backgroundColor: "#0b7a8f" }} />
-                            {t(`bayguide.bays.${bay.key}.label`)}
-                          </Typography>
-                          <Typography
-                            variant="h2"
-                            sx={{
-                              fontFamily: '"Playfair Display", serif',
-                              fontWeight: 700,
-                              fontSize: { xs: "32px", md: "48px" },
-                              color: "#006071",
-                              mb: 3,
-                            }}
-                          >
-                            {t(`bayguide.bays.${bay.key}.title`)}
-                          </Typography>
-                          <Typography
-                            sx={{
-                              fontSize: "18px",
-                              lineHeight: "32px",
-                              color: "#3e484c",
-                              mb: 4,
-                            }}
-                          >
-                            {t(`bayguide.bays.${bay.key}.description`)}
-                          </Typography>
+                          {t(`bayguide.bays.${bay.key}.label`)}
+                        </Typography>
+                        <Typography
+                          variant="h2"
+                          sx={{
+                            fontFamily: '"Playfair Display", serif',
+                            fontWeight: 700,
+                            fontSize: { xs: "32px", md: "48px" },
+                            color: "#0B4A5C",
+                            mb: 3,
+                          }}
+                        >
+                          {t(`bayguide.bays.${bay.key}.title`)}
+                        </Typography>
+                        <Typography
+                          sx={{
+                            fontSize: "18px",
+                            lineHeight: "32px",
+                            color: "#3e484c",
+                            mb: 4,
+                          }}
+                        >
+                          {t(`bayguide.bays.${bay.key}.description`)}
+                        </Typography>
 
-                          {/* Extras rendering */}
-                          {bay.extras === "tips" && (
-                            <Box sx={{ display: "flex", gap: 4 }}>
-                              {bay.tips.map((tip, i) => (
-                                <Box key={i} sx={{ flex: 1 }}>
-                                  <Box sx={{ color: "#006071", mb: 1 }}>{tip.icon}</Box>
-                                  <Typography
-                                    sx={{
-                                      fontFamily: '"Anybody", sans-serif',
-                                      fontWeight: 700,
-                                      fontSize: "12px",
-                                      textTransform: "uppercase",
-                                      letterSpacing: "0.05em",
-                                      color: "#6b5d3f",
-                                      mb: 0.5,
-                                    }}
-                                  >
-                                    {t(`bayguide.bays.${bay.key}.${tip.keyLabel}`)}
-                                  </Typography>
-                                  <Typography sx={{ fontSize: "14px", color: "#3e484c" }}>
-                                    {t(`bayguide.bays.${bay.key}.${tip.keyText}`)}
-                                  </Typography>
+                        {/* Extras rendering */}
+                        {bay.extras === "tips" && (
+                          <Box sx={{ display: "flex", gap: 4 }}>
+                            {bay.tips.map((tip, i) => (
+                              <Box key={i} sx={{ flex: 1 }}>
+                                <Box sx={{ color: "#0B4A5C", mb: 1 }}>
+                                  {tip.icon}
                                 </Box>
-                              ))}
-                            </Box>
-                          )}
+                                <Typography
+                                  sx={{
+                                    fontFamily: '"Anybody", sans-serif',
+                                    fontWeight: 700,
+                                    fontSize: "12px",
+                                    textTransform: "uppercase",
+                                    letterSpacing: "0.05em",
+                                    color: "#6b5d3f",
+                                    mb: 0.5,
+                                  }}
+                                >
+                                  {t(
+                                    `bayguide.bays.${bay.key}.${tip.keyLabel}`,
+                                  )}
+                                </Typography>
+                                <Typography
+                                  sx={{ fontSize: "14px", color: "#3e484c" }}
+                                >
+                                  {t(`bayguide.bays.${bay.key}.${tip.keyText}`)}
+                                </Typography>
+                              </Box>
+                            ))}
+                          </Box>
+                        )}
 
-                          {bay.extras === "quote" && (
-                            <Box
+                        {bay.extras === "quote" && (
+                          <Box
+                            sx={{
+                              borderLeft: "2px solid #0B4A5C",
+                              pl: 3,
+                              py: 1,
+                            }}
+                          >
+                            <Typography
                               sx={{
-                                borderLeft: "2px solid #006071",
-                                pl: 3,
-                                py: 1,
+                                fontFamily: '"Playfair Display", serif',
+                                fontStyle: "italic",
+                                fontSize: "20px",
+                                color: "#1c1c19",
                               }}
                             >
-                              <Typography
+                              {t(`bayguide.bays.${bay.key}.quote`)}
+                            </Typography>
+                          </Box>
+                        )}
+
+                        {bay.extras === "checklist" && (
+                          <Box
+                            sx={{
+                              display: "flex",
+                              flexDirection: "column",
+                              gap: 1.5,
+                            }}
+                          >
+                            {bay.checklist.map((itemKey, i) => (
+                              <Box
+                                key={i}
                                 sx={{
-                                  fontFamily: '"Playfair Display", serif',
-                                  fontStyle: "italic",
-                                  fontSize: "20px",
-                                  color: "#1c1c19",
+                                  display: "flex",
+                                  alignItems: "center",
+                                  gap: 1.5,
                                 }}
                               >
-                                {t(`bayguide.bays.${bay.key}.quote`)}
-                              </Typography>
-                            </Box>
-                          )}
-
-                          {bay.extras === "checklist" && (
-                            <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
-                              {bay.checklist.map((itemKey, i) => (
-                                <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
-                                  <CheckCircleIcon sx={{ color: "#6b5d3f", fontSize: 20 }} />
-                                  <Typography sx={{ color: "#3e484c" }}>{t(`bayguide.bays.${bay.key}.${itemKey}`)}</Typography>
-                                </Box>
-                              ))}
-                            </Box>
-                          )}
-                        </Box>
-                      </ScrollReveal>
-                    </Grid>
-                  </Grid>
-                </Grid>
-              ))}
-            </Grid>
+                                <CheckCircleIcon
+                                  sx={{ color: "#6b5d3f", fontSize: 20 }}
+                                />
+                                <Typography sx={{ color: "#3e484c" }}>
+                                  {t(`bayguide.bays.${bay.key}.${itemKey}`)}
+                                </Typography>
+                              </Box>
+                            ))}
+                          </Box>
+                        )}
+                      </Box>
+                    </ScrollReveal>
+                  </Stack>
+                </Stack>
+              </Stack>
+            ))}
+          </Stack>
         </Box>
 
         {/* ═══════ TRAVEL TIPS ═══════ */}
@@ -486,12 +490,13 @@ export default function BayGuidePage() {
               />
             </Box>
 
-            <Grid container spacing={4}>
+            <Stack spacing={4}>
               {travelTips.map((tip, i) => (
-                <Grid item xs={12} md={4} key={i}>
+                <Stack>
                   <ScrollReveal delay={i * 100}>
                     <Box
                       sx={{
+                        width: "100%",
                         background: "#ffffff",
                         borderRadius: "16px",
                         p: 4,
@@ -535,9 +540,9 @@ export default function BayGuidePage() {
                       </Typography>
                     </Box>
                   </ScrollReveal>
-                </Grid>
+                </Stack>
               ))}
-            </Grid>
+            </Stack>
           </ScrollReveal>
         </Box>
 
@@ -561,7 +566,7 @@ export default function BayGuidePage() {
               variant="contained"
               href="#booking"
               sx={{
-                backgroundColor: "#006071",
+                backgroundColor: "#0B4A5C",
                 color: "#fff",
                 px: 6,
                 py: 2.5,
@@ -572,7 +577,7 @@ export default function BayGuidePage() {
                 textTransform: "uppercase",
                 boxShadow: "0 20px 40px rgba(0, 96, 113, 0.25)",
                 "&:hover": {
-                  backgroundColor: "#004e5d",
+                  backgroundColor: "#083A4A",
                   transform: "scale(1.05)",
                 },
                 transition: "all 0.3s ease",

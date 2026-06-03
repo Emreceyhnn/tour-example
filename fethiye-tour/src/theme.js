@@ -3,15 +3,15 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#006071',
-      light: '#0b7a8f',
-      dark: '#004e5d',
+      main: '#0B4A5C',
+      light: '#42929D',
+      dark: '#083A4A',
       contrastText: '#ffffff',
     },
     secondary: {
-      main: '#6b5d3f',
-      light: '#f1deb8',
-      dark: '#52452a',
+      main: '#42929D',
+      light: '#6BB8C2',
+      dark: '#2D6E76',
       contrastText: '#ffffff',
     },
     background: {
@@ -126,14 +126,14 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           textTransform: 'none',
-          borderRadius: '8px',
+          borderRadius: '24px',
           fontWeight: 700,
           fontSize: '16px',
           padding: '12px 24px',
         },
         containedPrimary: {
           '&:hover': {
-            backgroundColor: '#004e5d',
+            backgroundColor: '#083A4A',
             transform: 'scale(1.05)',
           },
           transition: 'all 0.3s ease',
@@ -164,7 +164,7 @@ const theme = createTheme({
     MuiContainer: {
       styleOverrides: {
         root: {
-          maxWidth: '1280px',
+          maxWidth: '1440px',
         },
       },
     },

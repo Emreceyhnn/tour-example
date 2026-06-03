@@ -9,6 +9,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
+import SEO from "../components/SEO";
 
 export default function PrivacyPolicy() {
   const { t } = useTranslation();
@@ -54,6 +55,7 @@ export default function PrivacyPolicy() {
 
   return (
     <>
+      <SEO titleKey="seo.privacy.title" descKey="seo.privacy.desc" canonical="/privacy" />
       <Navbar />
 
       <Box
@@ -62,7 +64,7 @@ export default function PrivacyPolicy() {
           pt: { xs: 16, md: 24 },
           pb: 10,
           px: { xs: 2, md: "80px" },
-          maxWidth: "1280px",
+          maxWidth: "1440px",
           mx: "auto",
         }}
       >
@@ -94,7 +96,7 @@ export default function PrivacyPolicy() {
               fontSize: { xs: "32px", md: "64px" },
               lineHeight: { xs: "40px", md: "72px" },
               letterSpacing: "-0.02em",
-              color: "#006071",
+              color: "#0B4A5C",
               mb: 3,
             }}
           >
@@ -141,13 +143,13 @@ export default function PrivacyPolicy() {
                     py: 0.5,
                     borderLeft: "2px solid",
                     marginLeft: "-2px",
-                    borderColor: activeSection === item.id ? "#006071" : "transparent",
-                    color: activeSection === item.id ? "#006071" : "#3e484c",
+                    borderColor: activeSection === item.id ? "#0B4A5C" : "transparent",
+                    color: activeSection === item.id ? "#0B4A5C" : "#3e484c",
                     fontWeight: activeSection === item.id ? 700 : 400,
                     textDecoration: "none",
                     transition: "all 0.2s ease",
                     cursor: "pointer",
-                    "&:hover": { color: "#006071" },
+                    "&:hover": { color: "#0B4A5C" },
                   }}
                 >
                   {t(`privacy.nav.${item.key}`)}
@@ -205,7 +207,7 @@ export default function PrivacyPolicy() {
                     fontFamily: '"Playfair Display", serif',
                     fontWeight: 600,
                     fontSize: "32px",
-                    color: "#006071",
+                    color: "#0B4A5C",
                     mb: 3,
                     display: "flex",
                     alignItems: "center",
@@ -222,13 +224,13 @@ export default function PrivacyPolicy() {
                 </Typography>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, mt: 3 }}>
                   <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1 }}>
-                    <CheckCircleIcon sx={{ color: "#006071", fontSize: 20, mt: 0.5 }} />
+                    <CheckCircleIcon sx={{ color: "#0B4A5C", fontSize: 20, mt: 0.5 }} />
                     <Typography sx={{ color: "#3e484c" }}>
                       {t('privacy.s1.check1')}
                     </Typography>
                   </Box>
                   <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1 }}>
-                    <CheckCircleIcon sx={{ color: "#006071", fontSize: 20, mt: 0.5 }} />
+                    <CheckCircleIcon sx={{ color: "#0B4A5C", fontSize: 20, mt: 0.5 }} />
                     <Typography sx={{ color: "#3e484c" }}>
                       {t('privacy.s1.check2')}
                     </Typography>
@@ -244,7 +246,7 @@ export default function PrivacyPolicy() {
                     fontFamily: '"Playfair Display", serif',
                     fontWeight: 600,
                     fontSize: "32px",
-                    color: "#006071",
+                    color: "#0B4A5C",
                     mb: 3,
                     display: "flex",
                     alignItems: "center",
@@ -266,7 +268,7 @@ export default function PrivacyPolicy() {
                         border: "1px solid rgba(190, 200, 204, 0.3)",
                       }}
                     >
-                      <Typography sx={{ fontWeight: 700, color: "#006071", mb: 1 }}>
+                      <Typography sx={{ fontWeight: 700, color: "#0B4A5C", mb: 1 }}>
                         {t('privacy.s2.c1.title')}
                       </Typography>
                       <Typography sx={{ fontSize: "14px", color: "#3e484c" }}>
@@ -283,7 +285,7 @@ export default function PrivacyPolicy() {
                         border: "1px solid rgba(190, 200, 204, 0.3)",
                       }}
                     >
-                      <Typography sx={{ fontWeight: 700, color: "#006071", mb: 1 }}>
+                      <Typography sx={{ fontWeight: 700, color: "#0B4A5C", mb: 1 }}>
                         {t('privacy.s2.c2.title')}
                       </Typography>
                       <Typography sx={{ fontSize: "14px", color: "#3e484c" }}>
@@ -315,7 +317,7 @@ export default function PrivacyPolicy() {
                       fontFamily: '"Playfair Display", serif',
                       fontWeight: 600,
                       fontSize: "32px",
-                      color: "#006071",
+                      color: "#0B4A5C",
                       mb: 2,
                     }}
                   >
@@ -333,7 +335,7 @@ export default function PrivacyPolicy() {
                       fontFamily: "inherit",
                       fontSize: "16px",
                       fontWeight: 700,
-                      color: "#006071",
+                      color: "#0B4A5C",
                       textDecoration: "underline",
                       textUnderlineOffset: "4px",
                       cursor: "pointer",
@@ -357,7 +359,7 @@ export default function PrivacyPolicy() {
                     flexShrink: 0,
                   }}
                 >
-                  <CookieIcon sx={{ fontSize: 60, color: "#006071" }} />
+                  <CookieIcon sx={{ fontSize: 60, color: "#0B4A5C" }} />
                 </Box>
               </Box>
 
@@ -369,7 +371,7 @@ export default function PrivacyPolicy() {
                     fontFamily: '"Playfair Display", serif',
                     fontWeight: 600,
                     fontSize: "32px",
-                    color: "#006071",
+                    color: "#0B4A5C",
                     mb: 3,
                     display: "flex",
                     alignItems: "center",
@@ -396,7 +398,7 @@ export default function PrivacyPolicy() {
                   textAlign: "center",
                 }}
               >
-                <MailIcon sx={{ fontSize: 40, color: "#006071", mb: 2 }} />
+                <MailIcon sx={{ fontSize: 40, color: "#0B4A5C", mb: 2 }} />
                 <Typography
                   variant="h3"
                   sx={{
@@ -419,7 +421,7 @@ export default function PrivacyPolicy() {
                     display: "inline-block",
                     px: 5,
                     py: 2,
-                    backgroundColor: "#006071",
+                    backgroundColor: "#0B4A5C",
                     color: "#ffffff",
                     borderRadius: "999px",
                     fontWeight: 700,

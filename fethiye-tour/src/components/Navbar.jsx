@@ -58,6 +58,9 @@ export default function Navbar() {
     setScrolled(trigger);
   }, [trigger]);
 
+  const isLightPage = location.pathname.includes('/privacy') || location.pathname.includes('/terms');
+  const darkTheme = true;
+
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -67,19 +70,15 @@ export default function Navbar() {
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: scrolled
-            ? "rgba(252, 249, 244, 0.95)"
-            : "rgba(252, 249, 244, 0.1)",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.2)",
-          transition: "all 0.3s ease-in-out",
+          backgroundColor: "#fcf9f4",
+          borderBottom: "1px solid rgba(11, 74, 92, 0.1)",
+          transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
           zIndex: 1300,
         }}
       >
         <Toolbar
           sx={{
-            maxWidth: "1280px",
+            maxWidth: "1440px",
             width: "100%",
             mx: "auto",
             px: { xs: 2, md: "80px" },
@@ -99,15 +98,15 @@ export default function Navbar() {
               textDecoration: "none",
             }}
           >
-            <Logo size={scrolled ? 40 : 48} scrolled={scrolled} />
+            <Logo size={scrolled ? 40 : 48} scrolled={darkTheme} />
             <Typography
               variant="h3"
               sx={{
                 fontFamily: '"Playfair Display", serif',
                 fontWeight: 700,
-                color: scrolled ? "#006071" : "#ffffff",
+                color: darkTheme ? "#0B4A5C" : "#ffffff",
                 fontSize: { xs: "24px", md: "32px" },
-                textShadow: scrolled ? "none" : "0 2px 4px rgba(0,0,0,0.5)",
+                textShadow: darkTheme ? "none" : "0 2px 4px rgba(0,0,0,0.5)",
               }}
             >
               Mavi Rota
@@ -136,12 +135,12 @@ export default function Navbar() {
                   sx={{
                     fontFamily: '"DM Sans", sans-serif',
                     fontSize: "16px",
-                    color: scrolled ? "#3e484c" : "#ffffff",
+                    color: darkTheme ? "#3e484c" : "#ffffff",
                     textDecoration: "none",
-                    textShadow: scrolled ? "none" : "0 2px 4px rgba(0,0,0,0.5)",
+                    textShadow: darkTheme ? "none" : "0 2px 4px rgba(0,0,0,0.5)",
                     transition: "color 0.3s, transform 0.3s",
                     "&:hover": {
-                      color: "#006071",
+                      color: "#0B4A5C",
                       transform: "scale(1.05)",
                     },
                     display: "inline-block",
@@ -155,6 +154,8 @@ export default function Navbar() {
               <Typography
                 onClick={() => switchLanguage("tr")}
                 sx={{
+                  color: darkTheme ? "#0B4A5C" : "#ffffff",
+                  textShadow: darkTheme ? "none" : "0 2px 4px rgba(0,0,0,0.5)",
                   fontSize: "18px",
                   cursor: "pointer",
                   opacity: lang === "tr" ? 1 : 0.5,
@@ -168,6 +169,8 @@ export default function Navbar() {
               <Typography
                 onClick={() => switchLanguage("en")}
                 sx={{
+                  color: darkTheme ? "#0B4A5C" : "#ffffff",
+                  textShadow: darkTheme ? "none" : "0 2px 4px rgba(0,0,0,0.5)",
                   fontSize: "18px",
                   cursor: "pointer",
                   opacity: lang === "en" ? 1 : 0.5,
@@ -185,7 +188,7 @@ export default function Navbar() {
           <IconButton
             sx={{
               display: { md: "none" },
-              color: scrolled ? "#006071" : "#ffffff",
+              color: darkTheme ? "#0B4A5C" : "#ffffff",
             }}
             onClick={handleDrawerToggle}
           >
@@ -208,7 +211,7 @@ export default function Navbar() {
         }}
       >
         <Box sx={{ display: "flex", justifyContent: "flex-end", px: 2, mb: 2 }}>
-          <IconButton onClick={handleDrawerToggle} sx={{ color: "#006071" }}>
+          <IconButton onClick={handleDrawerToggle} sx={{ color: "#0B4A5C" }}>
             <CloseIcon />
           </IconButton>
         </Box>
@@ -217,12 +220,16 @@ export default function Navbar() {
             <ListItem key={link.label} disablePadding>
               <ListItemButton
                 component={link.isRoute ? Link : "a"}
-                {...(link.isRoute ? { to: link.href } : { href: link.href })}
+                {...(link.isRoute
+                  ? {
+                      to: `/${lang || "en"}${link.href === "/" ? "" : link.href}`,
+                    }
+                  : { href: link.href })}
                 onClick={handleDrawerToggle}
                 sx={{
                   px: 4,
                   py: 1.5,
-                  "&:hover": { backgroundColor: "rgba(0, 96, 113, 0.08)" },
+                  "&:hover": { backgroundColor: "rgba(11, 74, 92, 0.08)" },
                 }}
               >
                 <ListItemText
