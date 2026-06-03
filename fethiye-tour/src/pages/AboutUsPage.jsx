@@ -6,12 +6,7 @@ import EcoIcon from "@mui/icons-material/Public";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import AboutHero from "../components/about/AboutHero";
-import AboutHeritage from "../components/about/AboutHeritage";
-import AboutPhilosophy from "../components/about/AboutPhilosophy";
-import AboutCrew from "../components/about/AboutCrew";
-import AboutFleet from "../components/about/AboutFleet";
-import AboutSustainability from "../components/about/AboutSustainability";
+
 import SEO from "../components/SEO";
 import { useTranslation } from "react-i18next";
 
