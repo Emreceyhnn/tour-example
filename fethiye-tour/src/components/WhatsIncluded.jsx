@@ -94,18 +94,20 @@ export default function WhatsIncluded() {
             direction="row"
             flexWrap="wrap"
             justifyContent="center"
+            alignItems="flex-start"
             columnGap={{ xs: 2, sm: 4, md: 8 }}
             rowGap={{ xs: 6, md: 4 }}
+            sx={{ maxWidth: "1000px", mx: "auto" }}
           >
             {items.map((item, index) => (
               <Stack 
                 key={index}
                 alignItems="center"
                 sx={{
-                  flexBasis: { xs: "calc(50% - 8px)", sm: "calc(33.333% - 22px)", md: "auto" },
+                  flexBasis: { xs: "calc(50% - 8px)", sm: "calc(33.333% - 22px)", md: "18%" },
                   flexGrow: { md: 1 },
-                  maxWidth: { md: "200px" },
-                  width: { md: "100%" },
+                  display: "flex",
+                  justifyContent: "center",
                 }}
               >
                 <Box
